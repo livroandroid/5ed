@@ -1,0 +1,10 @@
+<resources>
+    <!-- Customizações para Android 5.0 -->
+    <!-- Drawer Layout sobre a Toolbar >= Android 5.0 -->
+    <style name="AppTheme.NoActionBar.NavDrawer">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
