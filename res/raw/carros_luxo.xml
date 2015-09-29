@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carros>
+   <carro>
+	<nome>Bugatti Veyron</nome>
+	<desc><![CDATA[
+O carro custa US $ 3,8 milhões e está disponível em edições limitadas. Bugatti fabricados apenas cinco destes carros e é um dos carros mais caros do mundo. O carro possui um motor muito potente e uma velocidade máxima de 250 mph. A Bugatti cumpriu cada uma das promessas que fez para o Veyron. Ele atende todos os critérios estabelecidos por Piëch quando ele foi anunciado e o faz com autoridade. Luxuoso, elegante, marcante, exclusivo, loucamente caro e enlouquecedoramente rápido, o Veyron estabelece um novo patamar para os veículos Grand Touring.
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.bugatti.com/en/veyron-16.4/design.html
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Bugatti_Veyron.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/bugatti_veyron.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Ferrari Enzo</nome>
+	<desc><![CDATA[
+Preço de US $ 1,5 milhão, Ferrari Enzo tem fascinado muitos amantes do desporto automóvel em todo o mundo. O carro possui um motor de 12 cilindros. Apenas 399 carros foram produzidos sempre e Michael Schumacher não se esqueça de comprar um. A tecnologia de Fórmula 1 fez este lindo carro de luxo uma escolha favorita entre os amantes de carros Ferrari. Características como a aerodinâmica poderosa, o corpo de fibra de carbono e os discos de freio de cerâmica de carbono torná-lo especial entre todos os carros de luxo. 
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.ferrari.com/English/GT_Sport%20Cars/Classiche/All_Models/Pages/Enzo_Ferrari.aspx
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Ferrari_Enzo.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/ferrari_enzo.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Lamborghini Reventon</nome>
+	<desc><![CDATA[
+Este carro de luxo tem um preço de US $ 1,6 milhões. Esta besta tem um captador de 0-60 milhas em 3,3 segundos e atinge uma velocidade máxima de 211 quilômetros por hora. Lamborghini Reventón parece com o Batmobile e existem apenas 10 deles.  
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.lamborghini.com/
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Lamborghini_Reventon.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/lamborghini _reventon.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Leblanc Mirabeau</nome>
+	<desc><![CDATA[
+Leblanc, a empresa fabricante suíço de automóveis, não poderia ter se tornado o nome da casa como alguns dos seus concorrentes no entanto, que continua a produzir o principal produto na estrada. Leblanc Mirabeau está disponível em $ 861.798 e do corpo de fibra de carbono do carro permite desempenho pista e, ao mesmo tempo, mantém-street legal. Alimentado com um motor de potência 700, o carro está em conformidade com benchmarks LeMans e pode acelerar até 230 km por hora. 
+	 ]]>
+	</desc>
+	<url_info>
+		http://en.wikipedia.org/wiki/Leblanc_%28automobile_manufacturer%29
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Leblanc_Mirabeau.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/leblanc_mirabeau.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Shelby Supercars Ultimate</nome>
+	<desc><![CDATA[
+Este carro vem com um preço de 740.000 dólares. As portas tesoura do Ultimate Aero lembrar-nos de Lamborghini em 1980. Alimentado com rodas de fibra de carbono e um motor V8, o carro pode levá-lo a uma velocidade máxima de 260 mph e tem um captador de 0-62 milhas em 2,78 segundo. Velocidade é o que torna o Ultimate Aero diferente dos outros.
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.shelbysupercars.com/ultimate-aero.php
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Shelby_Supercars_Ultimate.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/shelby.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Pagani Zonda</nome>
+	<desc><![CDATA[
+Pagani Zonda é tudo sobre curvas. O design aerodinâmico do carro nos lembra da aeronave F16. Infelizmente, Pagani só fabrica 10 deles a cada ano. O carro tem uma velocidade máxima de 215 quilômetros por hora, juntamente com um captador de 0-60 milhas em 3,5 segundos. Pagani Zonda chega até você a um preço de 667.321 dólares. Este automóvel de luxo é uma beleza pura.  
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.pagani.com/it/zonda/zonda_F/default.aspx
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Pagani_Zonda.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/pagani_zonda.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Koenigsegg CCX</nome>
+	<desc><![CDATA[
+Este carro elegante sueco é um dos carros melhor desempenho no mundo. Koenigsegg tem uma velocidade máxima de mais de 245 quilômetros por hora e está disponível em uma versão eco-friendly verde. O interior tem todas as atrações de um helicóptero de transporte de tropas. O carro custa 600.910 dólares.
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.koenigsegg.com
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Koenigsegg_CCX.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/koenigsegg.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Mercedes SLR McLaren</nome>
+	<desc><![CDATA[
+Isto pode não ser o speedster, mas características como um sistema de som Bose e transmissão automática ajudá-lo a se destacar entre outros carros de luxo. O carro tem um captador de 0-60 milhas em 3,8 segundos e pode chegar a até 206 milhas por hora. Mercedes SLR McLaren está disponível para você em 495.000 dólares. 
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.mercedes-benz.com.br
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Mercedes_McLaren.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/mclaren_slr.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>
+   <carro>
+	<nome>Rolls Royce Phantom</nome>
+	<desc><![CDATA[
+O carro é diferente dos outros carros de ponta por causa de sua extensa gama de funcionalidades. Logos personalizados e coachlining, 16 tons exterior, folheados de madeira e couro, refrigeradores champagne interior, iluminada ornamentos de capô de cristal e divisores assento à prova de balas estão todos disponíveis para você em US $ 450.000. 
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.rolls-roycemotorcars.com/phantom
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Rolls_Royce_Phantom.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/rolls_royce.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>  
+   <carro>
+	<nome>Lexus LFA</nome>
+	<desc><![CDATA[
+Esta besta fibra de carbono com acabamentos extenso tem uma velocidade máxima de 202 quilômetros por hora. Até à data, apenas 500 carros tenham sido fabricados pela Lexus Motors. Esta beleza estava disponível a US $ 375.000.v. Este motor V10 do Lexus LFA é totalmente novo, compacto. A Lexus diz que ele é mais compacto que um V8 convencional. A potência é enviada para as rodas através de um câmbio sequencial de seis marchas, que tem quatro modos de condução selecionáveis. 
+	 ]]>
+	</desc>
+	<url_info>
+		http://www.lexus.com/LFA/
+	</url_info>
+	<url_foto>
+		http://www.livroandroid.com.br/livro/carros/luxo/Lexus_LFA.png
+	</url_foto>
+	<url_video>
+		http://www.livroiphone.com.br/carros/luxo/lexus.mp4
+	</url_video>
+	<latitude>-23.564224</latitude>
+	<longitude>-46.653156</longitude>
+   </carro>   
+</carros>

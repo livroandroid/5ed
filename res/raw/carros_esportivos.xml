@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carros>
+	<carro>
+		<nome>Ferrari FF</nome>
+		<desc><![CDATA[A Ferrari FF acaba de ser revelada. Se trata do primeiro modelo da marca a ter tração integral. Além disso, ele conta com um motor dianteiro V12. Se trata de um modelo GT de quatro lugares que não só substitui a 612 mas também atrai um novo tipo de cliente, daquele que gosta de percorrer caminhos mais difíceis que exigem tração integral. Este modelo revolucionário (dentro da marca) tem um novo chassi com entre-eixos maior, além de suspensão independente que incorpora a última geração de amortecedores ajustáveis, além de freios de cerâmica da Brembo.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.ferrari.com/English/GT_Sport%20Cars/CurrentRange/FF/Pages/FF.aspx
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/Ferrari_FF.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/ferrari_ff.mp4
+		</url_video>
+		<latitude>44.532218</latitude>
+		<longitude>10.864019</longitude>
+	</carro>
+	<carro>
+		<nome>AUDI GT Spyder</nome>
+		<desc><![CDATA[O mais novo modelo limitado a 333 unidades que vem para preencher a lacuna de modelo top de linha, vaga desde que o cupê do mesmo modelo, há um ano atrás, esgotou todos os pedidos ainda ano passado.
+O segredo do baixo peso é fazer uso de fibra de carbono para boa parte dos painéis de carroceria, e fibra de vidro para os bancos concha. Além disso, o teto da capota é tecido e se retrai em 19 segundos, podendo-se recolhe-lo andando em velocidades de até 50km/h.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.audi.com.br/br/brand/pt.html
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/Audi_Spyder.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/audi_gt.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>Porsche Panamera</nome>
+		<desc><![CDATA[O Porsche Panamera é um modelo coupé de 4 portas de porte grande lançado pela Porsche em 2009. Tem motorização dianteira V6 e V8 feitos em Stuttgart, a carroçaria é fornecida já pintada pela fábrica da VW localizada em Hanover, e a montagem final ocorre em Leipzig. Treze cores e combinações de materiais podem ser escolhidas para o interior do Panamera. As versões são S, 4S e Turbo. Nas duas versões mais "fracas", o porta-malas tem capacidade para 445 litros, ao passo que na Turbo estamos falando de 432 litros.	 ]]>
+		</desc>
+		<url_info>
+			http://www.porsche.com.br/
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/Porsche_Panamera.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/porsche_panamera.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>Lamborghini Aventador</nome>
+		<desc><![CDATA[    
+Outro modelo que estreou em Genebra, conta com um desempenho estimado para fazer 0-100 km/h em 2,9 segundos e uma velocidade máxima de 350 km/h. É equipado com 1 motor 6.5 que gera 700 cavalos de potência com o uso intesivo em fibra de carbono. Ele é o modelo mas rapido e potente que a lamborghini produziu.. Sua produção será limitada a 4000 unidades (4099 Murciélagos foram produzidas). A Lamborghini afirma que o Aventador está duas gerações na frente de qualquer carro a venda, usando suspensão inspirada em carros da Fórmula 1 e chassi feitos em fibra de carbono.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.aventador.com/
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/Lamborghini_Aventador.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/lamborghini_aventador.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>Chevrolet Corvette Z06</nome>
+		<desc><![CDATA[    
+Chevrolet Corvette é um carro esporte criado pela Chevrolet em 1953. É fabricado hoje em dia por uma fábrica exclusiva em Bowling Green da General Motors. Foi o primeiro carro esporte inteiramente americano fabricado por uma empresa americana. A Chevrolet completa 100 anos em 2011 e nada mais justo que uma edição especial do seu mais famoso esportivo, que traz detalhes de acabamento exclusivos.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.chevrolet.com/corvette-z06-sports-car/
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/Chevrolet_Corvette_Z06.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/chevrolet_corvette.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>BMW M5</nome>
+		<desc><![CDATA[BMW M5 é um modelo esportivo da marca BMW. Ele é um derivado da série 5, modificado pela motorsport, a divisão de esportivos da marca. O modelo atual possui um motor V10 de 507 CV, atingindo uma velocidade de 330km/h (sem limitador, sendo que com ele a velocidade máxima fica em 250 km/h) e chegando do repouso aos 100km/h em somente 4,7s, sendo o sedã mais rápido do mundo produzido atualmente. O M5 recorreu a algumas inovações da Fórmula 1, incluindo os modos de transmissão (manual, automática) e electrónica como o launch control (controlo electrónico de arranque para as rodas traseiras não entrarem em derrapagem. Inclui um sistema chamado Drivelogic que permite ao condutor experimentar os 11 modos de passagem de caixa.  
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.bmw.com/com/en/newvehicles/mseries/m5sedan/2011/showroom/index.html
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/BMW.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/bmw-m5.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>Renault Megane RS Trophy</nome>
+		<desc><![CDATA[A Renault apresentou essa edição limitada do Megane RenaultSport chamada 265 Trophy que recebeu além de alterações visuais, aumento de potência dos originais 250 cv para 265 cv. Com esse carro, a marca francesa estabeleceu um novo recorde no circuito de Nurburgring para carros de produção com tração dianteira.l. Além das alterações no turbo e no sistema de admissão para o ganho de potência, as 500 unidades que serão produzidas do 265 Trophy recebeu ainda rodas de 19 com pneus Bridgestone de alta performance, chassi esportivo, bem como bancos e cintos de segurança de competição.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.infomotor.com.br/site/2011/07/2011-renault-megane-rs-trophy
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/Renault_Megane_Trophy.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/renault_megane.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>Maserati Grancabrio Sport</nome>
+		<desc><![CDATA[A variante mais potente chega à versão conversível e emprega o mesmo motor V8 de 4.7 litros e 450 cv do cupê. O conjunto é suficiente para levar o carro aos 285 km/h. Algumas melhorias foram feitas para o GranCabrio. Além dos 10 cv a mais, o motor ficou cerca de 6% mais econômico, ainda que boa parte dos compradores não esteja muito preocupada com o gasto de combustível.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.maserati.com/maserati/en/en/index/models/GranCabrio-Sport.html
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/Maserati_Grancabrio_Sport.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/renault_megane.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>McLAREN MP4-12C</nome>
+		<desc><![CDATA[Criada para se tornar a primeira McLaren moderna, o super esportivo tem design atual, que foi feito para não sair de moda em pouco tempo, embora alguns diriam que as linhas da MP4-12C ficaram genéricas demais.Outros detalhes incluem painel baixo para melhor visibilidade, volante sem botões e controles do ar-condicionado na porta. O motor da McLaren MP4-12C é um 3.8 V8 twin-turbo, que entrega 600 cavalos de potência.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.mclarenautomotive.com/uk/default.aspx#/p11/explore
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/McLAREN.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/mcLaren.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+	<carro>
+		<nome>MERCEDES-BENZ C63 AMG</nome>
+		<desc><![CDATA[A alemã Mercedes-Benz revelou o novo C63 AMG Coupe Black Series, a versão mais potente do cupê da linha Classe C. O modelo é equipado com o mesmo motor do C63 Coupe, o V8 6.2, mas após algumas modificações o modelo ganhou mais 60 cavalos, para um total de 524 cv de potência máxima e 63,22 kgfm de torque. Com todas essas características, o C63 AMG Black Series acelera de 0 a 100 km/h em apenas 4,2 segundos.
+	 ]]>
+		</desc>
+		<url_info>
+			http://www.mercedes-amg.com/#/c63-overview
+		</url_info>
+		<url_foto>
+			http://www.livroandroid.com.br/livro/carros/esportivos/MERCEDES_BENZ_AMG.png
+		</url_foto>
+		<url_video>
+			http://www.livroiphone.com.br/carros/esportivos/mercedes.mp4
+		</url_video>
+		<latitude>-23.564224</latitude>
+		<longitude>-46.653156</longitude>
+	</carro>
+</carros>

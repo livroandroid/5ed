@@ -6,4 +6,5 @@
     android:background="?attr/colorPrimary"
     android:minHeight="?attr/actionBarSize"
     android:theme="@style/AppTheme.AppBarOverlay"
+    app:layout_scrollFlags="scroll|enterAlways"
     app:popupTheme="@style/AppTheme.PopupOverlay" />
