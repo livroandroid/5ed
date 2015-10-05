@@ -25,7 +25,7 @@ public class CarrosTabFragment extends BaseFragment {
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabLayout);
         // Cria as tabs com o mesmo adapter utilizado pelo ViewPager
         tabLayout.setupWithViewPager(viewPager);
-        int cor = ContextCompat.getColor(getContext(),R.color.white);
+        int cor = ContextCompat.getColor(getContext(), R.color.white);
         // Cor branca no texto (o fundo azul foi definido no layout)
         tabLayout.setTabTextColors(cor, cor);
         return view;

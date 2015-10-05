@@ -17,7 +17,7 @@
     <dimen name="img_carro_height">128dp</dimen>
     <dimen name="app_bar_height">180dp</dimen>
 
-    <!-- EditarCarroFragment -->
+    <!-- EditarCarroDialog -->
     <dimen name="popup_width">300dp</dimen>
     <dimen name="popup_height">300dp</dimen>
 

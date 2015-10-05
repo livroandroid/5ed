@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Livro Android">
+        <CheckBoxPreference
+            android:key="PREF_CHECK_PUSH"
+            android:summary="Receber alertas de Push sobre lançamentos de novos carros."
+            android:title="Notificacoes" />
+    </PreferenceCategory>
+</PreferenceScreen>

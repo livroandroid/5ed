@@ -1,7 +1,7 @@
 package br.com.livroandroid.carros.activity;
 
 import android.os.Bundle;
-import android.view.View;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -27,12 +27,18 @@ public class CarroActivity extends BaseActivity {
         ImageView appBarImg = (ImageView) findViewById(R.id.appBarImg);
         Picasso.with(getContext()).load(c.urlFoto).into(appBarImg);
         // Adiciona o fragment no layout
-        if(savedInstanceState == null) {
+        if (savedInstanceState == null) {
             // Cria o fragment com o mesmo Bundle (args) da intent
             CarroFragment frag = new CarroFragment();
             frag.setArguments(getIntent().getExtras());
             // Adiciona o fragment no layout
-            getSupportFragmentManager().beginTransaction().add(R.id.CarroFragment,frag).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.CarroFragment, frag).commit();
         }
+    }
+
+    public void setTitle(String s) {
+        // O título deve ser setado na CollapsingToolbarLayout
+        CollapsingToolbarLayout c = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        c.setTitle(s);
     }
 }

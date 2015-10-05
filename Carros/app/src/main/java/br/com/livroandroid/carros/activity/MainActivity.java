@@ -10,9 +10,8 @@ import android.view.View;
 
 import br.com.livroandroid.carros.R;
 import br.com.livroandroid.carros.adapter.TabsAdapter;
-import br.com.livroandroid.carros.fragments.AboutDialog;
-import br.com.livroandroid.carros.fragments.CarrosFragment;
-import br.com.livroandroid.carros.fragments.CarrosTabFragment;
+import br.com.livroandroid.carros.fragments.dialog.AboutDialog;
+import livroandroid.lib.utils.Prefs;
 
 public class MainActivity extends BaseActivity {
 
@@ -33,10 +32,11 @@ public class MainActivity extends BaseActivity {
             }
         });
     }
+
     // Configura o ViewPager + Tabs
     private void setupViewPagerTabs() {
         // ViewPager
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setOffscreenPageLimit(2);
         viewPager.setAdapter(new TabsAdapter(getContext(), getSupportFragmentManager()));
         // Tabs
@@ -46,6 +46,25 @@ public class MainActivity extends BaseActivity {
         int cor = ContextCompat.getColor(getContext(), R.color.white);
         // Cor branca no texto (o fundo azul foi definido no layout)
         tabLayout.setTabTextColors(cor, cor);
+
+        // Ao criar a view, mostra a última tab selecionada
+        int tabIdx = Prefs.getInteger(getContext(), "tabIdx");
+        viewPager.setCurrentItem(tabIdx);
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                // Salva o índice da página/tab selecionada
+                Prefs.setInteger(getContext(), "tabIdx", viewPager.getCurrentItem());
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+        });
     }
 
     @Override

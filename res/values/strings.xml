@@ -14,6 +14,7 @@ Versao %s<br><br>
 	]]>
 	</string>
     <string name="about_dialog_title">Livro Android</string>
+    <string name="Atualizar">Atualizar</string>
 
     <!-- C -->
     <string name="carros">Carros</string>
@@ -25,7 +26,8 @@ Versao %s<br><br>
 
     <!-- E -->
     <string name="esportivos">Esportivos</string>
-    <string name="error_conexao_indisponivel">Conexão indisponível. Verifique seu Wi-Fi ou 3G.</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
 
     <!-- L -->
     <string name="luxo">Luxo</string>
@@ -33,6 +35,8 @@ Versao %s<br><br>
 
     <!-- M -->
     <string name="mapa">Mapa</string>
+    <string name="msg_alerta_permissao">Para utilizar este aplicativo, você precisa aceitar as permissões.</string>
+    <string name="msg_error_conexao_indisponivel">Conexão indisponível. Verifique seu Wi-Fi ou 3G.</string>
 
     <!-- N -->
     <string name="nav_drawer_username">Ricardo Lecheta</string>
@@ -43,11 +47,13 @@ Versao %s<br><br>
     <string name="ok">OK</string>
 
     <!-- S -->
+    <string name="share">Share</string>
     <string name="sobre">Sobre</string>
     <string name="site_do_livro">Site do Livro</string>
 
     <!-- V -->
     <string name="vazio" />
     <string name="video">Vídeo</string>
+
 
 </resources>

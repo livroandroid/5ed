@@ -2,17 +2,17 @@ package br.com.livroandroid.carros.activity;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.support.v4.app.Fragment;
-import br.com.livroandroid.carros.fragments.CarrosFragment;
-import br.com.livroandroid.carros.fragments.CarrosTabFragment;
-import br.com.livroandroid.carros.fragments.SiteLivroFragment;
 
 import br.com.livroandroid.carros.R;
+import br.com.livroandroid.carros.activity.prefs.ConfiguracoesActivivity;
+import br.com.livroandroid.carros.activity.prefs.ConfiguracoesV11Activivity;
+import livroandroid.lib.utils.AndroidUtils;
 import livroandroid.lib.utils.NavDrawerUtil;
 
 public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
@@ -30,7 +30,7 @@ public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
     protected void setupNavDrawer() {
         // Drawer Layout
         final ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null) {
+        if (actionBar != null) {
             // Ícone do menu do nav drawer
             actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
             actionBar.setDisplayHomeAsUpEnabled(true);
@@ -82,10 +82,16 @@ public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
                 startActivity(new Intent(getContext(), SiteLivroActivity.class));
                 break;
             case R.id.nav_item_settings:
-                toast("Clicou em configurações");
+                if (AndroidUtils.isAndroid3Honeycomb()) {
+                    startActivity(new Intent(this, ConfiguracoesV11Activivity.class));
+                } else {
+                    startActivity(new Intent(this, ConfiguracoesActivivity.class));
+                }
+
                 break;
         }
     }
+
     // Adiciona o fragment no centro da tela
     protected void replaceFragment(Fragment frag) {
         toast("OK!");

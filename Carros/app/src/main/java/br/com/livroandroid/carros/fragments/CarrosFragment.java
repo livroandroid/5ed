@@ -1,23 +1,23 @@
 package br.com.livroandroid.carros.fragments;
 
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.squareup.otto.Subscribe;
+
 import org.parceler.Parcels;
 
-import java.io.IOException;
 import java.util.List;
 
+import br.com.livroandroid.carros.CarrosApplication;
 import br.com.livroandroid.carros.R;
 import br.com.livroandroid.carros.activity.CarroActivity;
 import br.com.livroandroid.carros.adapter.CarroAdapter;
@@ -47,6 +47,23 @@ public class CarrosFragment extends BaseFragment {
             // Lê o tipo dos argumentos.
             this.tipo = getArguments().getInt("tipo");
         }
+
+        // Registra a classe para receber eventos.
+        CarrosApplication.getInstance().getBus().register(this);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        // Cancela o recebimento de eventos.
+        CarrosApplication.getInstance().getBus().unregister(this);
+    }
+
+    @Subscribe
+    public void onBusAtualizarListaCarros(String refresh) {
+        // Recebeu o evento, atualiza a lista.
+        taskCarros(false);
     }
 
     @Override
@@ -73,12 +90,12 @@ public class CarrosFragment extends BaseFragment {
             @Override
             public void onRefresh() {
                 // Valida se existe conexão ao fazer o gesto Pull to Refresh
-                if(AndroidUtils.isNetworkAvailable(getContext())) {
+                if (AndroidUtils.isNetworkAvailable(getContext())) {
                     // Atualiza ao fazer o gesto Pull to Refresh
                     taskCarros(true);
                 } else {
                     swipeLayout.setRefreshing(false);
-                    snack(recyclerView, R.string.error_conexao_indisponivel);
+                    snack(recyclerView, R.string.msg_error_conexao_indisponivel);
                 }
             }
         };
@@ -92,37 +109,8 @@ public class CarrosFragment extends BaseFragment {
 
     private void taskCarros(boolean pullToRefresh) {
         // Busca os carros: Dispara a Task
-        startTask("carros", new GetCarrosTask(),pullToRefresh ? R.id.swipeToRefresh : R.id.progress);
+        startTask("carros", new GetCarrosTask(pullToRefresh), pullToRefresh ? R.id.swipeToRefresh : R.id.progress);
     }
-
-    // Task para buscar os carros
-    private class GetCarrosTask implements TaskListener<List<Carro>> {
-        @Override
-        public List<Carro> execute() throws Exception {
-            Thread.sleep(5000);
-            // Busca os carros em background (Thread)
-            return CarroService.getCarros(getContext(), tipo);
-        }
-        @Override
-        public void updateView(List<Carro> carros) {
-            if (carros != null) {
-                // Salva a lista de carros no atributo da classe
-                CarrosFragment.this.carros = carros;
-                // Atualiza a view na UI Thread
-                recyclerView.setAdapter(new CarroAdapter(getContext(), carros, onClickCarro()));
-            }
-        }
-        @Override
-        public void onError(Exception e) {
-            // Qualquer exceção lançada no método execute vai cair aqui.
-            alert("Ocorreu algum erro ao buscar os dados.");
-        }
-        @Override
-        public void onCancelled(String s) {
-        }
-    }
-
-
 
     private CarroAdapter.CarroOnClickListener onClickCarro() {
         return new CarroAdapter.CarroOnClickListener() {
@@ -135,5 +123,39 @@ public class CarrosFragment extends BaseFragment {
 
             }
         };
+    }
+
+    // Task para buscar os carros
+    private class GetCarrosTask implements TaskListener<List<Carro>> {
+        private boolean refresh;
+        public GetCarrosTask(boolean refresh) {
+            this.refresh = refresh;
+        }
+
+        @Override
+        public List<Carro> execute() throws Exception {
+            // Busca os carros em background (Thread)
+            return CarroService.getCarros(getContext(), tipo, refresh);
+        }
+
+        @Override
+        public void updateView(List<Carro> carros) {
+            if (carros != null) {
+                // Salva a lista de carros no atributo da classe
+                CarrosFragment.this.carros = carros;
+                // Atualiza a view na UI Thread
+                recyclerView.setAdapter(new CarroAdapter(getContext(), carros, onClickCarro()));
+            }
+        }
+
+        @Override
+        public void onError(Exception e) {
+            // Qualquer exceção lançada no método execute vai cair aqui.
+            alert("Ocorreu algum erro ao buscar os dados.");
+        }
+
+        @Override
+        public void onCancelled(String s) {
+        }
     }
 }
