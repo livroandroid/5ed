@@ -1,5 +1,6 @@
 package br.com.livroandroid.carros.activity;
 
+import android.app.backup.BackupManager;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
@@ -14,7 +15,7 @@ import br.com.livroandroid.carros.fragments.dialog.AboutDialog;
 import livroandroid.lib.utils.Prefs;
 
 public class MainActivity extends BaseActivity {
-
+    private BackupManager backupManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,9 @@ public class MainActivity extends BaseActivity {
                 snack(v, "Exemplo de FAB Button.");
             }
         });
+
+        // Gerenciador de backup
+        backupManager = new BackupManager(getContext());
     }
 
     // Configura o ViewPager + Tabs
@@ -59,6 +63,8 @@ public class MainActivity extends BaseActivity {
             public void onPageSelected(int position) {
                 // Salva o índice da página/tab selecionada
                 Prefs.setInteger(getContext(), "tabIdx", viewPager.getCurrentItem());
+                // Faz o backup
+                backupManager.dataChanged();
             }
 
             @Override
