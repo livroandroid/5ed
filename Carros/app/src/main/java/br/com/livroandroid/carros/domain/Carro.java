@@ -13,6 +13,8 @@ public class Carro {
     public String latitude;
     public String longitude;
 
+    public boolean selected; // Flag para indicar que o carro está selecionado
+
     @Override
     public String toString() {
         return "Carro{" + "nome='" + nome + '\'' + '}';

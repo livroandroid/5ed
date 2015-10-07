@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_action_share"
+        android:title="@string/share"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_remove"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/excluir"
+        app:showAsAction="always" />
+</menu>
