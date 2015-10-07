@@ -8,7 +8,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Tucker.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/tucker.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Chevrolet Corvette",
@@ -17,7 +17,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Chevrolet_Corvette.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/corvette.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Chevrolet Impala Coupe",
@@ -26,7 +26,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Chevrolet_Impala_Coupe.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/chevrolet_impala.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Cadillac Deville Convertible",
@@ -35,7 +35,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Cadillac_Deville_Convertible.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/cadillac_deville.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Chevrolet Bel-Air",
@@ -44,7 +44,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Chevrolet_BelAir.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/chevrolet_bel_air.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Cadillac Eldorado",
@@ -53,7 +53,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Cadillac_Eldorado.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/cadillac_eldorado.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Ferrari 250 GTO",
@@ -62,7 +62,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Ferrari_250_GTO.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/ferrari_gto.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Dodge Challenger",
@@ -71,7 +71,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Dodge_Challenger.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/dodge_challenger.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Camaro SS 1969",
@@ -80,7 +80,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Camaro_SS.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/camaro_ss.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       },
       {
         "nome": "Ford Mustang 1976",
@@ -89,7 +89,7 @@
         "url_foto": "http://www.livroandroid.com.br/livro/carros/classicos/Ford_Mustang.png",
         "url_video": "http://www.livroiphone.com.br/carros/classicos/ford_mustang.mp4",
         "latitude": "-23.564224",
-        "longitude":"-46.653156"
+        "longitude": "-46.653156"
       }
     ]
   }

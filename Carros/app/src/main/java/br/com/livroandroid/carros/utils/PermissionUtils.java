@@ -23,7 +23,7 @@ public class PermissionUtils {
         for (String permission : permissions) {
             // Valida permissão
             boolean ok = ContextCompat.checkSelfPermission(activity, permission) == PackageManager.PERMISSION_GRANTED;
-            if (! ok ) {
+            if (!ok) {
                 list.add(permission);
             }
         }

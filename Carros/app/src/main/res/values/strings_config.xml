@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gerado do SHA1: C1:66:56:93:DF:DE:0B:B9:DC:ED:76:D7:65:B7:10:DC:1F:3F:0D:41 -->
+    <string name="API_KEY">AIzaSyAys2aOU70T8Am0X28zrrmEejfO6_Q8dmQ</string>
+
+    <!-- Backup das prefs -->
+    <string name="BACKUP_API_KEY">AEdPqrEAAAAIs1GIXqvAiyxvQKOYUIPCZM3_krU1o0x_g8UFHw</string>
+</resources>

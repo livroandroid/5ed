@@ -16,6 +16,7 @@ import livroandroid.lib.utils.Prefs;
 
 public class MainActivity extends BaseActivity {
     private BackupManager backupManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

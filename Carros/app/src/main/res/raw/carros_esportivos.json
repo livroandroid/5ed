@@ -6,18 +6,18 @@
         "desc": "A Ferrari FF acaba de ser revelada. Se trata do primeiro modelo da marca a ter tração integral. Além disso, ele conta com um motor dianteiro V12. Se trata de um modelo GT de quatro lugares que não só substitui a 612 mas também atrai um novo tipo de cliente, daquele que gosta de percorrer caminhos mais difíceis que exigem tração integral. Este modelo revolucionário (dentro da marca) tem um novo chassi com entre-eixos maior, além de suspensão independente que incorpora a última geração de amortecedores ajustáveis, além de freios de cerâmica da Brembo.",
         "url_info": "http://www.ferrari.com/English/GT_Sport%20Cars/CurrentRange/FF/Pages/FF.aspx",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/Ferrari_FF.png",
-		"url_video": "http://www.livroiphone.com.br/carros/esportivos/ferrari_ff.mp4",
-		"latitude": "44.532218",
-		"longitude":"10.864019"
+        "url_video": "http://www.livroiphone.com.br/carros/esportivos/ferrari_ff.mp4",
+        "latitude": "44.532218",
+        "longitude": "10.864019"
       },
       {
         "nome": "AUDI GT Spyder",
         "desc": "O mais novo modelo limitado a 333 unidades que vem para preencher a lacuna de modelo top de linha, vaga desde que o cupê do mesmo modelo, há um ano atrás, esgotou todos os pedidos ainda ano passado. O segredo do baixo peso é fazer uso de fibra de carbono para boa parte dos painéis de carroceria, e fibra de vidro para os bancos concha. Além disso, o teto da capota é tecido e se retrai em 19 segundos, podendo-se recolhe-lo andando em velocidades de até 50km/h.",
         "url_info": "http://www.audi.com.br/br/brand/pt.html",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/Audi_Spyder.png",
-		"url_video": "http://www.livroiphone.com.br/carros/esportivos/audi_gt.mp4",
-		"latitude": "-22.951285",
-		"longitude":"-43.211262"
+        "url_video": "http://www.livroiphone.com.br/carros/esportivos/audi_gt.mp4",
+        "latitude": "-22.951285",
+        "longitude": "-43.211262"
       },
       {
         "nome": "Porsche Panamera",
@@ -25,8 +25,8 @@
         "url_info": "http://www.porsche.com.br/",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/Porsche_Panamera.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/porsche_panamera.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       },
       {
         "nome": "Lamborghini Aventador",
@@ -34,8 +34,8 @@
         "url_info": "http://www.aventador.com/",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/Lamborghini_Aventador.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/lamborghini_aventador.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       },
       {
         "nome": "Chevrolet Corvette Z06",
@@ -43,8 +43,8 @@
         "url_info": "http://www.chevrolet.com/corvette-z06-sports-car/",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/Chevrolet_Corvette_Z06.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/chevrolet_corvette.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       },
       {
         "nome": "BMW M5",
@@ -52,8 +52,8 @@
         "url_info": "http://www.bmw.com/com/en/newvehicles/mseries/m5sedan/2011/showroom/index.html",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/BMW.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/bmw-m5.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       },
       {
         "nome": "Renault Megane RS Trophy",
@@ -61,8 +61,8 @@
         "url_info": "http://www.infomotor.com.br/site/2011/07/2011-renault-megane-rs-trophy",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/Renault_Megane_Trophy.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/renault_megane.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       },
       {
         "nome": "Maserati Grancabrio Sport",
@@ -70,8 +70,8 @@
         "url_info": "http://www.maserati.com/maserati/en/en/index/models/GranCabrio-Sport.html",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/Maserati_Grancabrio_Sport.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/maserati.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       },
       {
         "nome": "McLAREN MP4-12C",
@@ -79,8 +79,8 @@
         "url_info": "http://www.mclarenautomotive.com/uk/default.aspx#/p11/explore",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/McLAREN.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/mcLaren.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       },
       {
         "nome": "MERCEDES-BENZ C63 AMG",
@@ -88,8 +88,8 @@
         "url_info": "http://www.mercedes-amg.com/#/c63-overview",
         "url_foto": "http://www.livroandroid.com.br/livro/carros/esportivos/MERCEDES_BENZ_AMG.png",
         "url_video": "http://www.livroiphone.com.br/carros/esportivos/mercedes.mp4",
-		"latitude": "-23.564224",
-		"longitude":"-46.653156"
+        "latitude": "-23.564224",
+        "longitude": "-46.653156"
       }
     ]
   }

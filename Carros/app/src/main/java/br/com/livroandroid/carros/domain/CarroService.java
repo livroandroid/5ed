@@ -31,16 +31,16 @@ public class CarroService {
     public static List<Carro> getCarros(Context context, int tipo, boolean refresh) throws IOException {
         // Busca os carros no banco de dados (somente se refresh=false)
         List<Carro> carros = !refresh ? getCarrosFromBanco(context, tipo) : null;
-        if(carros != null && carros.size() > 0) {
+        if (carros != null && carros.size() > 0) {
             // Encontrou o arquivo
             return carros;
         }
         // Se não encontrar, busca no web service
-        carros = getCarrosFromWebService(context,tipo);
+        carros = getCarrosFromWebService(context, tipo);
         return carros;
     }
 
-    public static List<Carro> getCarrosFromBanco(Context context, int tipo)  throws IOException {
+    public static List<Carro> getCarrosFromBanco(Context context, int tipo) throws IOException {
         CarroDB db = new CarroDB(context);
         try {
             String tipoString = getTipo(tipo);
@@ -55,20 +55,21 @@ public class CarroService {
     // Abre o arquivo salvo, se existir, e cria a lista de carros
     public static List<Carro> getCarrosFromArquivo(Context context, int tipo) throws IOException {
         String tipoString = getTipo(tipo);
-        String fileName = String.format("carros_%s.json",tipoString);
-        Log.d(TAG,"Abrindo arquivo: " + fileName);
+        String fileName = String.format("carros_%s.json", tipoString);
+        Log.d(TAG, "Abrindo arquivo: " + fileName);
         // Lê o arquivo da memória interna
-        String json = FileUtils.readFile(context,fileName,"UTF-8");
-        if(json == null) {
-            Log.d(TAG,"Arquivo "+fileName+" não encontrado.");
+        String json = FileUtils.readFile(context, fileName, "UTF-8");
+        if (json == null) {
+            Log.d(TAG, "Arquivo " + fileName + " não encontrado.");
             return null;
         }
         List<Carro> carros = parserJSON(context, json);
-        Log.d(TAG,"Retornando carros do arquivo "+fileName+".");
+        Log.d(TAG, "Retornando carros do arquivo " + fileName + ".");
         return carros;
     }
+
     // Faz a requisição HTTP, cria a lista de carros e salva o JSON em arquivo
-    public static List<Carro> getCarrosFromWebService(Context context, int tipo)  throws IOException {
+    public static List<Carro> getCarrosFromWebService(Context context, int tipo) throws IOException {
         String tipoString = getTipo(tipo);
         String url = URL.replace("{tipo}", tipoString);
         Log.d(TAG, "URL: " + url);
@@ -91,7 +92,7 @@ public class CarroService {
             // Salva todos os carros
             for (Carro c : carros) {
                 c.tipo = tipoString;
-                Log.d(TAG,"Salvando o carro " + c.nome);
+                Log.d(TAG, "Salvando o carro " + c.nome);
                 db.save(c);
             }
         } finally {
@@ -108,7 +109,7 @@ public class CarroService {
 
         // Cria um arquivo público
         f = SDCardUtils.getPublicFile(fileName, Environment.DIRECTORY_DOWNLOADS);
-            IOUtils.writeString(f, json);
+        IOUtils.writeString(f, json);
         Log.d(TAG, "2) Arquivo público salvo na pasta downloads: " + f);
     }
 

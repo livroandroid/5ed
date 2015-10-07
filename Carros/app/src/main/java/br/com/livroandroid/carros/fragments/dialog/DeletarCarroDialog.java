@@ -12,10 +12,6 @@ import android.support.v7.app.AlertDialog;
 public class DeletarCarroDialog extends DialogFragment {
     private Callback callback;
 
-    public interface Callback {
-        void onClickYes();
-    }
-
     public static void show(FragmentManager fm, Callback callback) {
         FragmentTransaction ft = fm.beginTransaction();
         Fragment prev = fm.findFragmentByTag("deletar_carro");
@@ -51,5 +47,9 @@ public class DeletarCarroDialog extends DialogFragment {
         builder.setPositiveButton("Sim", dialogClickListener);
         builder.setNegativeButton("Não", dialogClickListener);
         return builder.create();
+    }
+
+    public interface Callback {
+        void onClickYes();
     }
 }

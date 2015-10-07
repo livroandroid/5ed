@@ -1,8 +1,10 @@
 package br.com.livroandroid.carros.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.PopupMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -11,18 +13,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.squareup.otto.Bus;
 import com.squareup.picasso.Picasso;
-
-import org.parceler.Parcels;
 
 import br.com.livroandroid.carros.CarrosApplication;
 import br.com.livroandroid.carros.R;
 import br.com.livroandroid.carros.activity.CarroActivity;
+import br.com.livroandroid.carros.activity.MapaActivity;
+import br.com.livroandroid.carros.activity.VideoActivity;
 import br.com.livroandroid.carros.domain.Carro;
 import br.com.livroandroid.carros.domain.CarroDB;
 import br.com.livroandroid.carros.fragments.dialog.DeletarCarroDialog;
 import br.com.livroandroid.carros.fragments.dialog.EditarCarroDialog;
+import livroandroid.lib.utils.IntentUtils;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -34,7 +36,7 @@ public class CarroFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_carro, container, false);
-        carro = Parcels.unwrap(getArguments().getParcelable("carro"));
+        carro = getArguments().getParcelable("carro");
         setHasOptionsMenu(true);
         return view;
     }
@@ -94,9 +96,43 @@ public class CarroFragment extends BaseFragment {
         } else if (item.getItemId() == R.id.action_share) {
             toast("Compartilhar");
         } else if (item.getItemId() == R.id.action_maps) {
-            toast("Mapa");
+            // Abre outra activity para mostrar o mapa
+            Intent intent = new Intent(getContext(), MapaActivity.class);
+            intent.putExtra("carro", carro);
+            startActivity(intent);
+
         } else if (item.getItemId() == R.id.action_video) {
-            toast("Vídeo");
+            // URL do vídeo
+            final String url = carro.urlVideo;
+            // Lê a view que é a âncora do popup (é a view do botão da action bar)
+            View menuItemView = getActivity().findViewById(item.getItemId());
+            if (menuItemView != null && url != null) {
+                // Cria o PopupMenu posicionado na âncora
+                PopupMenu popupMenu = new PopupMenu(getActionBar().getThemedContext(),
+                        menuItemView);
+                popupMenu.inflate(R.menu.menu_popup_video);
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        if (item.getItemId() == R.id.action_video_browser) {
+                            // Abre o vídeo no browser
+                            IntentUtils.openBrowser(getContext(), url);
+                        } else if (item.getItemId() == R.id.action_video_player) {
+                            // Abre o vídeo no Player de Vídeo Nativo
+                            IntentUtils.showVideo(getContext(), url);
+                        } else if (item.getItemId() == R.id.action_video_videoview) {
+                            // Abre outra activity com VideoView
+                            Intent intent = new Intent(getContext(), VideoActivity.class);
+                            intent.putExtra("carro", carro);
+                            startActivity(intent);
+
+                        }
+                        return true;
+                    }
+                });
+                popupMenu.show();
+            }
+
         }
         return super.onOptionsItemSelected(item);
     }

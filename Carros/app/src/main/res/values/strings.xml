@@ -14,6 +14,9 @@ Versao %s<br><br>
 	]]>
 	</string>
     <string name="about_dialog_title">Livro Android</string>
+    <string name="action_video_browser">Browser</string>
+    <string name="action_video_player">Video Player</string>
+    <string name="action_video_videoview">VideoView</string>
     <string name="Atualizar">Atualizar</string>
 
     <!-- C -->
@@ -37,6 +40,16 @@ Versao %s<br><br>
     <string name="mapa">Mapa</string>
     <string name="msg_alerta_permissao">Para utilizar este aplicativo, você precisa aceitar as permissões.</string>
     <string name="msg_error_conexao_indisponivel">Conexão indisponível. Verifique seu Wi-Fi ou 3G.</string>
+    <!-- menu_frag_mapa.xml -->
+    <string name="mapa_normal">Modo Normal</string>
+    <string name="mapa_satelite">Modo Satélite</string>
+    <string name="mapa_terreno">Modo Terreno</string>
+    <string name="mapa_hibrido">Modo Híbrido</string>
+    <string name="mapa_location_directions">Direções</string>
+    <string name="mapa_location_carro">Localização do Carro</string>
+    <string name="mapa_zoom_in">Zoom (+)</string>
+    <string name="mapa_zoom_out">Zoom (-)</string>
+
 
     <!-- N -->
     <string name="nav_drawer_username">Ricardo Lecheta</string>
@@ -54,6 +67,11 @@ Versao %s<br><br>
     <!-- V -->
     <string name="vazio" />
     <string name="video">Vídeo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 
 
 </resources>

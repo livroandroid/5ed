@@ -20,7 +20,7 @@ public class SplashActivity extends BaseActivity {
         setContentView(R.layout.activity_splash);
 
         // Lista de permissões necessárias.
-        String permissions[] = new String [] {
+        String permissions[] = new String[]{
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.READ_EXTERNAL_STORAGE
         };
@@ -40,7 +40,7 @@ public class SplashActivity extends BaseActivity {
         for (int result : grantResults) {
             if (result == PackageManager.PERMISSION_DENIED) {
                 // Negou a permissão. Mostra alerta e fecha.
-                AlertUtils.alert(getContext(), R.string.app_name, R.string.msg_alerta_permissao,R.string.ok, new Runnable() {
+                AlertUtils.alert(getContext(), R.string.app_name, R.string.msg_alerta_permissao, R.string.ok, new Runnable() {
                     @Override
                     public void run() {
                         // Negou permissão. Sai do app.

@@ -7,6 +7,15 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <!-- GPS por hardware -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Obter a localização por Wi-Fi ou triangulação de antenas -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Mapas V2 depende da OpenGL ES V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
         android:name=".CarrosApplication"
         android:allowBackup="true"
@@ -15,6 +24,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- Google Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Chave de acesso (API Key) criada na página de Console. -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/API_KEY" />
+
+        <!-- Chave do backup service do Google -->
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="@string/BACKUP_API_KEY" />
+
         <activity
             android:name=".activity.SplashActivity"
             android:theme="@style/AppTheme">
@@ -59,11 +83,42 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
         </activity>
+        <activity
+            android:name=".activity.CarrosIntentActivity"
+            android:theme="@style/AppTheme">
 
-        <!-- Chave do backup service do Google -->
-        <meta-data
-            android:name="com.google.android.backup.api_key"
-            android:value="AEdPqrEAAAAIs1GIXqvAiyxvQKOYUIPCZM3_krU1o0x_g8UFHw" />
+            <!-- Filtro para carros://br.com.livroandroid.carros/carros/* -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="carros" />
+            </intent-filter>
+            <!-- Filtro para carros://br.com.livroandroid.carros/carros/* -->
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="carros" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.VideoActivity"
+            android:parentActivityName=".activity.CarroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CarroActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.MapaActivity"
+            android:parentActivityName=".activity.CarroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CarroActivity" />
+        </activity>
 
     </application>
 

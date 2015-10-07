@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_video_browser"
+        android:title="@string/action_video_browser"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_video_player"
+        android:title="@string/action_video_player"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_video_videoview"
+        android:title="@string/action_video_videoview"
+        app:showAsAction="always" />
+</menu>

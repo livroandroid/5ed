@@ -12,8 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.parceler.Parcels;
-
 import br.com.livroandroid.carros.R;
 import br.com.livroandroid.carros.domain.Carro;
 
@@ -21,11 +19,6 @@ public class EditarCarroDialog extends DialogFragment {
     private Callback callback;
     private Carro carro;
     private TextView tNome;
-
-    // Interface para retornar o resultado
-    public interface Callback {
-        void onCarroUpdated(Carro carro);
-    }
 
     // Método utilitário para criar o dialog
     public static void show(FragmentManager fm, Carro carro, Callback callback) {
@@ -39,7 +32,7 @@ public class EditarCarroDialog extends DialogFragment {
         frag.callback = callback;
         Bundle args = new Bundle();
         // Passa o objeto carro por parâmetro
-        args.putParcelable("carro", Parcels.wrap(carro));
+        args.putParcelable("carro", carro);
         frag.setArguments(args);
         frag.show(ft, "editar_carro");
     }
@@ -62,7 +55,7 @@ public class EditarCarroDialog extends DialogFragment {
         View view = inflater.inflate(R.layout.dialog_editar_carro, container, false);
         view.findViewById(R.id.btAtualizar).setOnClickListener(onClickAtualizar());
         tNome = (TextView) view.findViewById(R.id.tNome);
-        this.carro = Parcels.unwrap(getArguments().getParcelable("carro"));
+        this.carro = getArguments().getParcelable("carro");
         if (carro != null) {
             tNome.setText(carro.nome);
         }
@@ -88,5 +81,10 @@ public class EditarCarroDialog extends DialogFragment {
                 dismiss();
             }
         };
+    }
+
+    // Interface para retornar o resultado
+    public interface Callback {
+        void onCarroUpdated(Carro carro);
     }
 }
