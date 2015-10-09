@@ -85,6 +85,7 @@
                     android:alpha="0.5" />
 
                 <ImageView
+                    android:id="@+id/imgPlayVideo"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -148,11 +149,12 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
+            <FrameLayout
+                android:id="@+id/mapFragment"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="320dp"
                 android:layout_margin="16dp"
-                android:text="Mapa aqui" />
+                 />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>

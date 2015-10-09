@@ -38,6 +38,12 @@ public class CarroFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_carro, container, false);
         carro = getArguments().getParcelable("carro");
         setHasOptionsMenu(true);
+        view.findViewById(R.id.imgPlayVideo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showVideo(carro.urlVideo, v);
+            }
+        });
         return view;
     }
 
@@ -48,6 +54,12 @@ public class CarroFragment extends BaseFragment {
         setTextString(R.id.tDesc, carro.desc);
         final ImageView imgView = (ImageView) getView().findViewById(R.id.img);
         Picasso.with(getContext()).load(carro.urlFoto).fit().into(imgView);
+        // Seta a Lat/Lng
+        setTextString(R.id.tLatLng, String.format("%s/%s", carro.latitude, carro.longitude));
+        // Adiciona o fragment do Mapa
+        MapaFragment mapaFragment = new MapaFragment();
+        mapaFragment.setArguments(getArguments());
+        getChildFragmentManager().beginTransaction().replace(R.id.mapFragment, mapaFragment).commit();
     }
 
     @Override
@@ -106,35 +118,38 @@ public class CarroFragment extends BaseFragment {
             final String url = carro.urlVideo;
             // Lê a view que é a âncora do popup (é a view do botão da action bar)
             View menuItemView = getActivity().findViewById(item.getItemId());
-            if (menuItemView != null && url != null) {
-                // Cria o PopupMenu posicionado na âncora
-                PopupMenu popupMenu = new PopupMenu(getActionBar().getThemedContext(),
-                        menuItemView);
-                popupMenu.inflate(R.menu.menu_popup_video);
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem item) {
-                        if (item.getItemId() == R.id.action_video_browser) {
-                            // Abre o vídeo no browser
-                            IntentUtils.openBrowser(getContext(), url);
-                        } else if (item.getItemId() == R.id.action_video_player) {
-                            // Abre o vídeo no Player de Vídeo Nativo
-                            IntentUtils.showVideo(getContext(), url);
-                        } else if (item.getItemId() == R.id.action_video_videoview) {
-                            // Abre outra activity com VideoView
-                            Intent intent = new Intent(getContext(), VideoActivity.class);
-                            intent.putExtra("carro", carro);
-                            startActivity(intent);
-
-                        }
-                        return true;
-                    }
-                });
-                popupMenu.show();
-            }
-
+            // Mostra o alerta com as opções do vídeo
+            showVideo(url, menuItemView);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showVideo(final String url, View ancoraView) {
+        if(url != null && ancoraView != null) {
+            // Cria o PopupMenu posicionado na âncora
+            PopupMenu popupMenu = new PopupMenu(getActionBar().getThemedContext(), ancoraView);
+            popupMenu.inflate(R.menu.menu_popup_video);
+            popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    if (item.getItemId() == R.id.action_video_browser) {
+                        // Abre o vídeo no browser
+                        IntentUtils.openBrowser(getContext(), url);
+                    } else if (item.getItemId() == R.id.action_video_player) {
+                        // Abre o vídeo no Player de Vídeo Nativo
+                        IntentUtils.showVideo(getContext(), url);
+                    } else if (item.getItemId() == R.id.action_video_videoview) {
+                        // Abre outra activity com VideoView
+                        Intent intent = new Intent(getContext(), VideoActivity.class);
+                        intent.putExtra("carro", carro);
+                        startActivity(intent);
+
+                    }
+                    return true;
+                }
+            });
+            popupMenu.show();
+        }
     }
 }
 

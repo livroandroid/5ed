@@ -5,13 +5,13 @@
         android:id="@+id/action_location_carro"
         android:icon="@drawable/ic_action_place"
         android:title="@string/mapa_location_carro"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <!-- Traçar rota -->
     <item
         android:id="@+id/action_location_directions"
         android:icon="@drawable/ic_action_directions"
         android:title="@string/mapa_location_directions"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <!-- Modo normal -->
     <item
         android:id="@+id/action_mapa_normal"
