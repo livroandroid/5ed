@@ -166,4 +166,36 @@ public class CarroDB extends SQLiteOpenHelper {
             db.close();
         }
     }
+
+    public int update(ContentValues values, String where, String[] whereArgs) {
+        SQLiteDatabase db = getWritableDatabase();
+        try {
+            // update carro set values = ... where _id=?
+            int count = db.update("carro", values, where, whereArgs);
+            return count;
+        } finally {
+            db.close();
+        }
+    }
+
+    public long insert(ContentValues values) {
+        SQLiteDatabase db = getWritableDatabase();
+        try {
+            long id = db.insert("carro", "", values);
+            return id;
+        } finally {
+            db.close();
+        }
+    }
+
+    public int delete(String where, String[] whereArgs) {
+        SQLiteDatabase db = getWritableDatabase();
+        try {
+            // delete from carro where _id=?
+            int count = db.delete("carro", where, whereArgs);
+            return count;
+        } finally {
+            db.close();
+        }
+    }
 }

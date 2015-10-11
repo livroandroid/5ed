@@ -5,4 +5,7 @@
 
     <!-- Backup das prefs -->
     <string name="BACKUP_API_KEY">AEdPqrEAAAAIs1GIXqvAiyxvQKOYUIPCZM3_krU1o0x_g8UFHw</string>
+
+    <!-- Content Provider -->
+    <string name="provider">br.com.livroandroid.carros</string>
 </resources>

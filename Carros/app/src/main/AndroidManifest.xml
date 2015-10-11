@@ -120,6 +120,12 @@
                 android:value=".activity.CarroActivity" />
         </activity>
 
+        <!-- Content Provider -->
+        <provider
+            android:name=".provider.CarroProvider"
+            android:authorities="@string/provider" android:exported="true" />
+
+
     </application>
 
 </manifest>
