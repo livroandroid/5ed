@@ -2,6 +2,8 @@ package br.com.livroandroid.carros.fragments;
 
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.PopupMenu;
@@ -20,6 +22,7 @@ import br.com.livroandroid.carros.R;
 import br.com.livroandroid.carros.activity.CarroActivity;
 import br.com.livroandroid.carros.activity.MapaActivity;
 import br.com.livroandroid.carros.activity.VideoActivity;
+import br.com.livroandroid.carros.databinding.FragmentCarroBinding;
 import br.com.livroandroid.carros.domain.Carro;
 import br.com.livroandroid.carros.domain.CarroDB;
 import br.com.livroandroid.carros.fragments.dialog.DeletarCarroDialog;
@@ -31,11 +34,15 @@ import livroandroid.lib.utils.IntentUtils;
  */
 public class CarroFragment extends BaseFragment {
     private Carro carro;
+    private FragmentCarroBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_carro, container, false);
+        binding = FragmentCarroBinding.inflate(inflater, container, false);
+
+        View view = binding.getRoot();
+
         carro = getArguments().getParcelable("carro");
         setHasOptionsMenu(true);
         view.findViewById(R.id.imgPlayVideo).setOnClickListener(new View.OnClickListener() {
@@ -50,8 +57,10 @@ public class CarroFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        // Faz binding da view
+        binding.setCarro(carro);
+
         // Atualiza a view do fragment com os dados do carro
-        setTextString(R.id.tDesc, carro.desc);
         final ImageView imgView = (ImageView) getView().findViewById(R.id.img);
         Picasso.with(getContext()).load(carro.urlFoto).fit().into(imgView);
         // Seta a Lat/Lng
