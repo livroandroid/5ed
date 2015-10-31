@@ -74,15 +74,15 @@ public class CarroAdapter extends RecyclerView.Adapter<CarroAdapter.CarrosViewHo
                     carroOnClickListener.onClickCarro(holder.itemView, position);
                 }
             });
+            // Click longo
+            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    carroOnClickListener.onLongClickCarro(holder.itemView, position);
+                    return true;
+                }
+            });
         }
-        // Click longo
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                carroOnClickListener.onLongClickCarro(holder.itemView, position);
-                return true;
-            }
-        });
 
         // Pinta o fundo de azul se a linha estiver selecionada
         int corFundo = context.getResources().getColor(c.selected ? R.color.primary : R.color.white);

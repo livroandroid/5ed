@@ -1,7 +1,11 @@
 package br.com.livroandroid.carros.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.NavUtils;
+import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -38,5 +42,15 @@ public class CarroActivity extends BaseActivity {
         // O título deve ser setado na CollapsingToolbarLayout
         CollapsingToolbarLayout c = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         c.setTitle(s);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                ActivityCompat.finishAfterTransition(getActivity());
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
