@@ -21,4 +21,8 @@
     <dimen name="popup_width">300dp</dimen>
     <dimen name="popup_height">300dp</dimen>
 
+    <!-- Nav Drawer -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
 </resources>

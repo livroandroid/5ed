@@ -8,12 +8,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import br.com.livroandroid.carros.R;
 import br.com.livroandroid.carros.activity.prefs.ConfiguracoesActivivity;
 import br.com.livroandroid.carros.activity.prefs.ConfiguracoesV11Activivity;
 import livroandroid.lib.utils.AndroidUtils;
-import livroandroid.lib.utils.NavDrawerUtil;
 
 public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
     protected DrawerLayout drawerLayout;
@@ -37,8 +39,10 @@ public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
             drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
             NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
             if (navigationView != null && drawerLayout != null) {
-                // Atualiza a imagem e textos do header
-                NavDrawerUtil.setHeaderValues(navigationView, R.id.containerNavDrawerListViewHeader, R.drawable.nav_drawer_header, R.drawable.ic_logo_user, R.string.nav_drawer_username, R.string.nav_drawer_email);
+                // Atualiza os dados do header do Navigation View
+                setNavViewValues(navigationView, R.string.nav_drawer_username,
+                        R.string.nav_drawer_email, R.mipmap.ic_launcher);
+
                 // Trata o evento de clique no menu.
                 navigationView.setNavigationItemSelectedListener(
                         new NavigationView.OnNavigationItemSelectedListener() {
@@ -55,6 +59,17 @@ public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
                         });
             }
         }
+    }
+
+    // Atualiza os dados do header do Navigation View
+    public static void setNavViewValues(NavigationView navView, int nome, int email, int img) {
+        View headerView = navView.getHeaderView(0);
+        TextView tNome = (TextView) headerView.findViewById(R.id.tNome);
+        TextView tEmail = (TextView) headerView.findViewById(R.id.tEmail);
+        ImageView imgView = (ImageView) headerView.findViewById(R.id.img);
+        tNome.setText(nome);
+        tEmail.setText(email);
+        imgView.setImageResource(img);
     }
 
     // Trata o evento do menu lateral
