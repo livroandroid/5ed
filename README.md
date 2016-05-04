@@ -2,11 +2,7 @@
 
 * http://livroandroid.com.br
 
-Os capítulos da 5ª edição são os mesmos da 4 edição, entao o código-fonte é o mesmo: Favor olhar aqui:
-
-https://github.com/livroandroid/4ed
-
-O aplicativo dos carros tem 2 diferenças:
+O aplicativo dos carros tem 2 diferenças entre a 5ª edição e 4ª edição:
 
 1) Foi usado o NavigationView para criar o menu lateral (novo componente do Material Design).  
 2) Usei a lib do Material Design para criar as animações da toolbar e rolagem da tela.
