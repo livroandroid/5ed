@@ -1,0 +1,2 @@
+audio : MP3 M4A AMR
+video: MP4 3GP

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+>
+	<!-- Bloco 1 -->
+	<LinearLayout
+		android:id="@+id/layout1"
+	 	android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:background="#eeeeee"
+		android:layout_weight="1"
+		android:layout_margin="10dp"
+		android:gravity="center"
+	>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" />
+
+
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_weight="2"
+	>
+		<!-- Bloco 2 -->
+		<LinearLayout
+			android:id="@+id/layout2"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="#eeeeee"
+			android:layout_weight="1"
+			android:layout_margin="10dp"
+			android:gravity="center"
+		>
+			<!-- Frag 2 -->
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar2" />
+		</LinearLayout>
+		<!-- Bloco 3 -->
+		<LinearLayout
+			android:id="@+id/layout3"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="#eeeeee"
+			android:layout_weight="1"
+			android:layout_margin="10dp"
+			android:gravity="center"
+		>
+			<!-- Frag 3 -->
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar3" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

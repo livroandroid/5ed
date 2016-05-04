@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/accent</item>
+    </style>
+
+    <style name="NavDrawerTheme" parent="BaseTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

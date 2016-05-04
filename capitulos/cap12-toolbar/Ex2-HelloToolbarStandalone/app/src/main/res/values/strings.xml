@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hello Toolbar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_go">Go</string>
+    <string name="texto1">Exemplo de Toolbar no lugar da Action Bar</string>
+    <string name="texto2">Exemplo de Toolbar lá em baixo e Action Bar normalmente em cima.</string>
+</resources>

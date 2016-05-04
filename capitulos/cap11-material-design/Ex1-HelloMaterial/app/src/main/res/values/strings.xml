@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hello Material</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_exemplo_elevation">Elevation</string>
+    <string name="title_activity_exemplo_card_view">CardView</string>
+    <string name="title_activity_exemplo_recycler_view">RecyclerView</string>
+    <string name="title_activity_exemplo_floating_button">Floating Action Button</string>
+    <string name="title_activity_exemplo_ripple">Ripple</string>
+    <string name="title_activity_exemplo_state_list_animator">StateListAnimator</string>
+    <string name="title_activity_exemplo_reveal_effect">Reveal Effect</string>
+    <string name="title_activity_exemplo_palette">Palette</string>
+    <string name="title_activity_exemplo_activity_transition">ActivityTransition</string>
+    <string name="title_activity_planeta">Planeta</string>
+
+    <string name="linear_layout">Linear</string>
+    <string name="grid_layout">Grid</string>
+
+    <string name="ok">OK</string>
+
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+
+    <string name="ler_cores">Ler Cores</string>
+
+    <string name="transition_key">qualquer_coisa_aqui</string>
+
+    <string name="ok1_state">OK 1 - StateListAnimator</string>
+    <string name="ok1">OK 1</string>
+    <string name="ok2">OK 2</string>
+    <string name="ok3">OK 3</string>
+    <string name="ok4">OK 4</string>
+    <string name="ok5">OK 5</string>
+    <string name="ok6">OK 6</string>
+    <string name="ok7">OK 7</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="title_activity_exemplo_coordinator_layout">CoordinatorLayout
+    </string>
+
+
+</resources>

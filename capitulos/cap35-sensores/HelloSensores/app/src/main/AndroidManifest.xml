@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.livroandroid.sensores">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- Google Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListaSensoresActivity"
+            android:label="@string/activity_title_lista"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LuminosidadeActivity"
+            android:label="@string/activity_title_luminosidade"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProximidadeActivity"
+            android:label="@string/activity_title_proximidade"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PressaoActivity"
+            android:label="@string/activity_title_pressao"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AcelerometroActivity"
+            android:label="@string/activity_title_acelerometro"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShakeActivity"
+            android:label="@string/activity_title_shake"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GiroscopioActivity"
+            android:label="@string/activity_title_giroscopio"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GoogleFitPedometroActivity"
+            android:label="@string/title_activity_google_fit_pedometro"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TestSensorActivity"
+            android:label="@string/title_activity_test_sensor"
+            android:parentActivityName=".ListaSensoresActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.ListaSensoresActivity" />
+        </activity>
+        <activity
+            android:name=".AcelerometroJogoActivity"
+            android:label="@string/title_activity_jogo_acelerometro"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.sensores.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

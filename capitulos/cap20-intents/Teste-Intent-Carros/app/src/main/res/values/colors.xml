@@ -1,0 +1,7 @@
+<resources>
+    <!-- Cores do Tema Material -->
+    <color name="primary">#03A9F4</color>
+    <color name="primary_dark">#01579B</color>
+    <color name="accent">#F44336</color>
+
+</resources>

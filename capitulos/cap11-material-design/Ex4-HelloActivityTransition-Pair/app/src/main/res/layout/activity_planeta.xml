@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Planeta Terra"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="@string/title_transition_key"
+        android:textSize="18sp" android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/planeta_03_terra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:transitionName="@string/img_transition_key"/>
+
+</LinearLayout>

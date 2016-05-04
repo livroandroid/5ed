@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="500"
+        android:propertyName="x"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:valueTo="200"
+        android:valueType="floatType" />
+    <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="500"
+        android:propertyName="y"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:valueTo="400"
+        android:valueType="floatType" />
+</set>

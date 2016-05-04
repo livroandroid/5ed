@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:id="@+id/layoutFrag"
+    >
+
+    <!--
+    Caso queira adicionar o fragment pelo XML
+    <fragment
+        android:id="@+id/PlanetaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="br.com.livroandroid.planetas.PlanetaFragment"
+        tools:layout="@layout/fragment_planeta" />
+    -->
+
+</RelativeLayout>

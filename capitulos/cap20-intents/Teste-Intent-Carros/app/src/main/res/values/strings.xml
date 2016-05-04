@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Teste-Intent-Carros</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nome_carro_selecionado">carro selecionado aqui</string>
+    <string name="mostrar_ferrari">Mostrar Ferrari FF</string>
+    <string name="selecionar">Selecionar um carro</string>
+</resources>

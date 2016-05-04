@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloGestos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_swipe">SwipeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_zoom">ZoomActivity</string>
+    <string name="faca_um_gesto">Faça um gesto</string>
+
+</resources>

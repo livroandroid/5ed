@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.livroandroid.hellodesignsupportlib" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name=".MainActivity" android:theme="@style/NavDrawerTheme"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExemploRecyclerViewActivity"
+            android:label="@string/title_activity_exemplo_recycler_view"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploFloatingButtonActivity"
+            android:label="@string/title_activity_exemplo_floating_button"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".PlanetaActivity"
+            android:label="@string/title_activity_planeta"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploCoordinatorLayoutActivity"
+            android:label="@string/title_activity_exemplo_coordinator_layout"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploCollapsingToolbarActivity"
+            android:label="@string/title_activity_collapsing_toolbar"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellodesignsupportlib.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploTabLayoutActivity"
+            android:label="@string/title_activity_tab"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellodesignsupportlib.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

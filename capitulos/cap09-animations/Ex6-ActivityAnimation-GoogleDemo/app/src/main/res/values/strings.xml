@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Activity-Animation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_window_anim_sub">WindowAnimSubActivity</string>
+    <string name="title_activity_sub">SubActivity</string>
+
+    <string name="activity_text">Sub-Activity</string>
+    <string name="copyright">Exemplo baseado no código do video do Youtube: Dev Bytes - Window Animation.\n\n Fonte: https://www.youtube.com/watch?v=Ho8vk61lVIU</string>
+
+</resources>

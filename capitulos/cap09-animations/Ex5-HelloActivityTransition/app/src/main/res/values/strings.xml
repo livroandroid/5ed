@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloActivityTransition</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="transition_key">img_transition_key</string>
+    <string name="title_activity_planeta">PlanetaActivity</string>
+</resources>

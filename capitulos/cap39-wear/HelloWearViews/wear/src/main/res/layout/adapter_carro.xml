@@ -1,0 +1,22 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ferrari_ff"/>
+    <TextView
+        android:id="@+id/tNome"
+        android:gravity="center_vertical|left"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-condensed-light"
+        android:lineSpacingExtra="-4sp"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+</LinearLayout>

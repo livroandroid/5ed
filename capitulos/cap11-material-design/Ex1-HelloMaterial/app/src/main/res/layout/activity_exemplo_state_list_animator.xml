@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:text="@string/ok1_state"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:stateListAnimator="@anim/raise"/>
+
+    <Button
+        android:text="@string/ok2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/raise"/>
+
+    <Button
+        android:text="@string/ok3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:stateListAnimator="@anim/raise"/>
+
+    <Button
+        android:text="@string/ok4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_rect"
+        android:layout_margin="8dp"
+        android:stateListAnimator="@anim/raise" />
+
+    <Button
+        android:text="@string/ok5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_rect_fill"
+        android:layout_margin="8dp"
+        android:stateListAnimator="@anim/raise" />
+
+    <Button
+        android:text="@string/ok6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_oval"
+        android:layout_margin="8dp"
+        android:stateListAnimator="@anim/raise" />
+
+    <Button
+        android:text="@string/ok7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_oval_fill"
+        android:layout_margin="8dp"
+        android:stateListAnimator="@anim/raise"/>
+
+</LinearLayout>

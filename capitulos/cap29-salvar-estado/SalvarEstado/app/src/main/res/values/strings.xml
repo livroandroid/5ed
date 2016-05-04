@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SalvarEstado</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main_fragment">MainFragmentActivity</string>
+    <string name="title_activity_progress_bar_demo">ProgressBar</string>
+    <string name="salvar_estado">Salvar Estado</string>
+
+    <string name="barra_de_progresso">Barra de Progresso</string>
+    <string name="simular_tarefa">Simular Tarefa</string>
+
+</resources>

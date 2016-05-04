@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LayoutAnimations</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_exemplo_anim_layout_changes">Layout Changes</string>
+    <string name="action_adicionar">Adicionar</string>
+    <string name="action_remover">Remover</string>
+
+</resources>

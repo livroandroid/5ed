@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.livroandroid.cap07_view">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ExemploTextoCoresActivity"
+            android:label="@string/texto_e_cores"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploAutoCompleteTextViewActivity"
+            android:label="@string/autocompletetextview"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploImageButtonActivity"
+            android:label="@string/imagebutton"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploToggleButtonActivity"
+            android:label="@string/tooglebutton"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploCheckRadioFormActivity"
+            android:label="@string/CheckRadio"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploSpinnerActivity"
+            android:label="@string/Spinner"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploProgressDialogActivity"
+            android:label="@string/progressdialog"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploProgressBarActivity"
+            android:label="@string/progressbar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploListViewActivity"
+            android:label="@string/listview"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploListViewPlanetasActivity"
+            android:label="@string/listview"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ExemploGridViewActivity"
+            android:label="@string/gridview"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploGalleryActivity"
+            android:label="@string/gallery"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploViewPagerActivity"
+            android:label="@string/viewPager"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploViewPagerTitleStripActivity"
+            android:label="@string/viewPager_title_strip"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploViewPagerTabStripActivity"
+            android:label="@string/viewPager_tab_strip"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploImageSwitcherActivity"
+            android:label="@string/imageSwitcher"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExemploWebViewActivity"
+            android:label="@string/webView"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".canvas.ExemploMinhaViewActivity"
+            android:label="Minha View"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".canvas.TouchScreenViewActivity"
+            android:label="Touch"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

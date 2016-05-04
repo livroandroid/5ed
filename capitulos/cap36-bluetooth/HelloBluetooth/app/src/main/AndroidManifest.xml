@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.livroandroid.bluetooth" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+
+        <activity android:name=".BluetoothCheckActivity" android:label="@string/bluetooth_check" android:parentActivityName=".MainActivity" />
+        <activity android:name=".ListaPareadosActivity" android:label="@string/lista_pareados" android:parentActivityName=".MainActivity" />
+        <activity android:name=".ListaDevicesActivity" android:label="@string/lista_devices" android:parentActivityName=".MainActivity" />
+        <activity android:name=".BluetoothChatServerActivity" android:label="@string/chat_server" android:parentActivityName=".MainActivity" />
+        <activity android:name=".BluetoothChatClientActivity" android:label="@string/chat_client" android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

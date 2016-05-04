@@ -1,0 +1,39 @@
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.wearable.view.CardScrollView
+        android:id="@+id/card_scroll_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_box="bottom">
+
+        <android.support.wearable.view.CardFrame
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Título do Card"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Texto do Card aqui\nCom várias linhas"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </android.support.wearable.view.CardFrame>
+    </android.support.wearable.view.CardScrollView>
+</android.support.wearable.view.BoxInsetLayout>

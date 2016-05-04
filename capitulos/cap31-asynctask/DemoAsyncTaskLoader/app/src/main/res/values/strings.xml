@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AsyncTaskLoader</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="texto_exemplo1">Este exemplo demonstra como baixar uma imagem com uma AsyncTask.\n\nPorém como estamos utilizando o <b>ProgressDialog</b>, ao rotacionar a tela o app vai travar.\n\nPara solucionar feche o dialog no <b>onDestroy()</b>.</string>
+    <string name="texto_exemplo2">Este exemplo demonstra como baixar uma imagem com um AsyncTask e Fragment.\n\nO fragment é retido em memória, assim a thread permanece viva durante o download e rotação da tela.</string>
+    <string name="texto_exemplo3">Este exemplo demonstra como baixar uma imagem com um Loader.\n\nO Loader faz parte do ciclo de vida da activity/fragment e resolve os problemas de troca de orientação.\n\nO botão de refresh na action bar mostra como executar o loader novamente.</string>
+    <string name="texto_exemplo4">Este exemplo demonstra a facilidade de iniciar threads com a biblioteca <b>android-utils</b> demonstrada no projeto dos carros.\n\nUtilize tarefas com <b>ProgressBar</b> ou <b>ProgressDialog</b> de forma transparente.\n\nA biblioteca trata automaticamente os problemas de rotação.\n\nCompare o código com as outra soluções e veja a simplificadade.</string>
+
+    <string name="title_activity_download_imagem_async_task">Download Imagem</string>
+    <string name="title_activity_download_imagem_async_task_save_state">Download Imagem - Salva Estado</string>
+    <string name="title_activity_download_imagem_fragments">Download Imagem - Fragments</string>
+    <string name="title_activity_download_imagem_loader">Download Imagem - Loader</string>
+    <string name="title_activity_progress_bar_demo">ProgressBarDemoActivity</string>
+    <string name="title_activity_download_imagem_task_lecheta">Task</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.DeviceDefault.Light">
+
+    </style>
+
+    <style name="FullScreenTheme" parent="android:Theme.DeviceDefault.Light">
+        <item name="android:windowSwipeToDismiss">false</item>
+    </style>
+
+</resources>

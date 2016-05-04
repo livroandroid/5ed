@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Property Animation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_exemplo_view_property_animator">ViewPropertyAnimator</string>
+    <string name="title_activity_exemplo_value_animator_text_view">ValueAnimator</string>
+
+</resources>

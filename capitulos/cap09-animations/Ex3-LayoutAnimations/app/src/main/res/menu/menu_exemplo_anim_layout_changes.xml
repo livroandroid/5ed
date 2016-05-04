@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.livroandroid.viewanimation.ExemploAnimLayoutChanges">
+    <item
+        android:id="@+id/action_add"
+        android:title="@string/action_adicionar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_remove"
+        android:title="@string/action_remover"
+        app:showAsAction="always" />
+</menu>

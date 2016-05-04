@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player MP3 do sdcard" />
+
+    <EditText
+        android:id="@+id/tArquivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/storage/15E1-1207/Music/linkin_park1.mp3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_start"
+            android:onClick="onClickPlay"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_pause"
+            android:onClick="onClickPause"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_stop"
+            android:onClick="onClickStop"/>
+    </LinearLayout>
+
+</LinearLayout>

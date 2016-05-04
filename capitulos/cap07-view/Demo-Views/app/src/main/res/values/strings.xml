@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo-Views</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="content_description">Descrição da imagem</string>
+
+    <string name="msg_verde_e_branco">Texto verde e branco</string>
+    <string name="msg_azul_e_branco">Texto azul e branco</string>
+    <string name="msg_vermelho_e_branco">Texto vermelho e branco</string>
+    <string name="texto1">Texto campo 1 azul</string>
+    <string name="texto_e_cores">Texto e Cores</string>
+    <string name="ok">OK</string>
+    <string name="estados">Estados</string>
+    <string name="contentDescription">Descrição da imagem</string>
+    <string name="autocompletetextview">AutoCompleteTextView</string>
+    <string name="imagebutton">ImageButton</string>
+    <string name="exemplo_de_checkbox_e_togglebutton">Exemplo de CheckBox e ToggleButton</string>
+    <string name="check_1">Check 1</string>
+    <string name="check_2">Check 2</string>
+    <string name="o_togglebutton_mostra_os_textos_ligado_ou_desligado_">O ToggleButton mostra os textos Ligado ou Desligado...</string>
+    <string name="tooglebutton">ToogleButton</string>
+    <string name="nome">Nome</string>
+    <string name="concorda">Concorda?</string>
+    <string name="sim">Sim</string>
+    <string name="receber_email_">Receber Email ?</string>
+    <string name="receber_email">Receber email</string>
+    <string name="enviar">Enviar</string>
+    <string name="nao">Não</string>
+    <string name="CheckRadio">Check e Radio</string>
+    <string name="selecione_uma_opcao">Selecione uma opção</string>
+    <string name="selecione_o_planeta">Selecione o planeta</string>
+    <string name="Spinner">Spinner</string>
+    <string name="progressdialog">ProgressDialog</string>
+    <string name="progressbar">ProgressBar</string>
+    <string name="barra_de_progresso">Barra de Progresso</string>
+    <string name="simular_tarefa">Simular Tarefa</string>
+    <string name="listview">ListView</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="viewPager">ViewPager</string>
+    <string name="viewPager_title_strip">ViewPager+TitleStrip</string>
+    <string name="viewPager_tab_strip">ViewPager+TabStrip</string>
+    <string name="imageSwitcher">ImageSwitcher</string>
+    <string name="webView">WebView</string>
+    <string name="tabHost">TabHost</string>
+
+    <string name="exemplo_gridview">Exemplo de GridView:</string>
+
+    <string name="gridview">GridView</string>
+
+    <string name="exemplo_gallery">Exemplo de Gallery</string>
+
+    <string name="exemplo_webview">Exemplo de WebView</string>
+
+    <string name="exemplo_viewpager">Exemplo de ViewPager</string>
+
+    <string name="exemplo_imageswitcher">Exemplo de ImageSwitcher</string>
+
+    <string name="proxima">Próxima</string>
+</resources>

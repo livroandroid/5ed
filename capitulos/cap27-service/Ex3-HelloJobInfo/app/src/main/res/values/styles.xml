@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!--   Cor primária do aplicativo -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!--   Variação escura da cor primária para a status bar e contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!--   Cor de acentuação para as views (checkbox, textfield, etc) -->
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+</resources>

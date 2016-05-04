@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <!-- Botão 1: Efeito padrão -->
+    <Button
+        android:text="@string/ok1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+
+    <!-- Botão 2: Efeito ripple -->
+    <Button
+        android:text="@string/ok2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackground" />
+
+    <!-- Botão 3: Efeito ripple sem borda -->
+    <Button
+        android:text="@string/ok3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <!-- Botão 4: Efeito ripple (quadrado sem preencher) -->
+    <Button
+        android:text="@string/ok4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_rect"
+        android:layout_margin="8dp" />
+
+    <!-- Botão 5: Efeito ripple (quadrado preenchido) -->
+    <Button
+        android:text="@string/ok5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_rect_fill"
+        android:layout_margin="8dp" />
+
+    <!-- Botão 6: Efeito ripple (oval sem preencher) -->
+    <Button
+        android:text="@string/ok6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_oval"
+        android:layout_margin="8dp" />
+
+    <!-- Botão 7: Efeito ripple (oval preenchido) -->
+    <Button
+        android:text="@string/ok7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_oval_fill"
+        android:layout_margin="8dp" />
+
+</LinearLayout>

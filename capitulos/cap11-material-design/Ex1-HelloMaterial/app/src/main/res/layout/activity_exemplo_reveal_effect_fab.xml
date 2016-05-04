@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_margin="16dp"
+        android:id="@+id/btFab1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#fff000"
+        android:background="@drawable/fab_oval"
+        android:elevation="8dp"
+        android:onClick="onClickFab1"
+        />
+
+    <ImageButton
+        android:layout_margin="16dp"
+        android:id="@+id/btFab2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#fff000"
+        android:background="@drawable/fab_oval"
+        android:elevation="8dp"
+        android:onClick="onClickFab2"
+        />
+
+</LinearLayout>

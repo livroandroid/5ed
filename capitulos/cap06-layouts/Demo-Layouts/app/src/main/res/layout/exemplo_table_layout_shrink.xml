@@ -1,0 +1,24 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:shrinkColumns="2" >
+
+    <TableRow>
+        <TextView android:text="@string/coluna_1" />
+        <TextView android:text="@string/coluna_2" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/coluna_1" />
+        <TextView android:text="@string/coluna_2" />
+        <TextView android:text="@string/texto_grande" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/coluna_1" />
+        <TextView android:text="@string/coluna_2" />
+        <TextView android:text="@string/coluna_3" />
+    </TableRow>
+
+</TableLayout>

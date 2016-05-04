@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hello Multimidia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_camera">Câmera</string>
+    <string name="title_activity_video">VideoView</string>
+    <string name="title_activity_audio">Áudio</string>
+</resources>

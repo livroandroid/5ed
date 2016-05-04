@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--   Cor primária do aplicativo -->
+        <item name="colorPrimary">@color/primary</item>
+        <!--   Variação escura da cor primária para a status bar e contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!--   Cor de acentuação para as views (checkbox, textfield, etc) -->
+        <item name="colorAccent">@color/accent</item>
+    </style>
+</resources>

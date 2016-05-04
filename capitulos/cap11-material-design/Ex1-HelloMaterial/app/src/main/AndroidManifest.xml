@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.livroandroid.hellomaterial" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExemploElevationActivity"
+            android:label="@string/title_activity_exemplo_elevation"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploCardView"
+            android:label="@string/title_activity_exemplo_card_view"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploRecyclerViewActivity"
+            android:label="@string/title_activity_exemplo_recycler_view"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploRecyclerViewAddRemoveActivity"
+            android:label="@string/title_activity_exemplo_recycler_view"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploFloatingButtonActivity"
+            android:label="@string/title_activity_exemplo_floating_button"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploRippleActivity"
+            android:label="@string/title_activity_exemplo_ripple"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploStateListAnimatorActivity"
+            android:label="@string/title_activity_exemplo_state_list_animator"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploRevealEffectActivity"
+            android:label="@string/title_activity_exemplo_reveal_effect"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploPaletteActivity"
+            android:label="@string/title_activity_exemplo_palette"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploActivityTransition"
+            android:label="@string/title_activity_exemplo_activity_transition"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PlanetaActivity"
+            android:label="@string/title_activity_planeta"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExemploCoordinatorLayoutActivity"
+            android:label="@string/title_activity_exemplo_coordinator_layout"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.hellomaterial.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Parte de cima -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/frag1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="br.com.livroandroid.demofragments.Fragment1" />
+
+    </LinearLayout>
+    <!-- Parte de baixo -->
+    <FrameLayout
+        android:id="@+id/layoutFrag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        android:orientation="horizontal" />
+
+</LinearLayout>

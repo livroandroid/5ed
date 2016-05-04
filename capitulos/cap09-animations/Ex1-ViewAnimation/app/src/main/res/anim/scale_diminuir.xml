@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Esta animação define que as coordenadas iniciais da animação são 1.0 (100%) tanto de X quanto de Y, informando o tamanho total da imagem. 
+E as coordenadas finais informadas são 0.0 (0%) informando que o tamanho final da imagem deve ser reduzido em nada. 
+Como o eixo da animação foi definido como 50%, a imagem vai diminuir aos poucos até desaparecer no seu centro.
+ -->
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fillAfter="true"
+    android:fromXScale="1.0"
+    android:fromYScale="1.0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toXScale="0.0"
+    android:toYScale="0.0" />

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo-Layouts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="content_description">Descrição da imagem</string>
+
+    <string name="nome">Nome</string>
+
+    <string name="ok">OK</string>
+
+    <string name="email">Email</string>
+
+    <string name="observacoes">Observações</string>
+
+    <string name="enviar">Enviar</string>
+
+    <string name="texto_weight_1">Texto (weight=1)</string>
+
+    <string name="texto_weight_2">Texto (weight=2)</string>
+
+    <string name="texto_weight_3">Texto (weight=3)</string>
+
+    <string name="coluna_1">Coluna 1</string>
+    <string name="coluna_2">Coluna 2</string>
+    <string name="coluna_3">Coluna 3</string>
+
+    <string name="texto_grande">"Texto Grande que vai sair da tela mas o shrinkColumns=2 foi
+\n\t\t\tutilizado para quebrar. "</string>
+
+    <string name="lista_de_produtos">Lista de Produtos</string>
+
+    <string name="produto_a">Produto A</string>
+
+    <string name="reais_100">R$100,00</string>
+
+    <string name="produto_b">Produto B</string>
+
+    <string name="reais_200">R$200,00</string>
+
+    <string name="produto_c">Produto C</string>
+
+    <string name="reais_300">R$300,00</string>
+
+    <string name="cancelar">Cancelar</string>
+
+    <string name="comprar">" Comprar "</string>
+
+    <string name="usuario">"Usuário: "</string>
+
+    <string name="senha">Senha</string>
+
+    <string name="login">Login</string>
+
+    <string name="scrollview">ScrollView</string>
+
+    <string name="linearlayout">LinearLayout</string>
+
+    <string name="tablelayout">TableLayout</string>
+
+
+</resources>

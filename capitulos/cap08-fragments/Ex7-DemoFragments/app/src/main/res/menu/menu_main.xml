@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_find_frag1_by_id"
+        android:title="@string/find_frag1_by_id"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_find_frag2_by_tag"
+        android:title="@string/find_frag2_by_tag"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_find_frag3_by_tag"
+        android:title="@string/find_frag3_by_tag"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_frag2"
+        android:title="@string/add_frag2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_remove_fragment"
+        android:title="@string/remove_frag2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_replace_fragment"
+        android:title="@string/replace_frag3"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_frag4_args"
+        android:title="@string/add_frag4_args"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_start_activity"
+        android:title="@string/add_start_activity"
+        app:showAsAction="never" />
+</menu>

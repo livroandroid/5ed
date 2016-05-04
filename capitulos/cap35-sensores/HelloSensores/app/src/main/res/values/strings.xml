@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloSensores</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_swipe">SwipeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_zoom">ZoomActivity</string>
+    <string name="faca_um_gesto">Faça um gesto</string>
+
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="rota_o">Rotação</string>
+    <string name="activity_title_lista">Lista Sensores</string>
+    <string name="activity_title_temeratura">Temperatura</string>
+    <string name="activity_title_luminosidade">Luminosidade</string>
+    <string name="activity_title_proximidade">Proximidade</string>
+    <string name="activity_title_pressao">Pressão</string>
+    <string name="activity_title_acelerometro">Acelerometro</string>
+    <string name="activity_title_shake">Shake</string>
+    <string name="activity_title_giroscopio">Giroscopio</string>
+    <string name="activity_title_orientacao">Orientacao</string>
+    <string name="valor">Valor</string>
+    <string name="title_activity_google_fit_pedometro">Google Fit</string>
+    <string name="qtde_passos">Quantidade de Passos</string>
+    <string name="valor_sensor">Valor do Sensor aqui</string>
+    <string name="title_activity_test_sensor">TestSensorActivity</string>
+    <string name="title_activity_jogo_acelerometro">JogoAcelerometroActivity</string>
+
+</resources>

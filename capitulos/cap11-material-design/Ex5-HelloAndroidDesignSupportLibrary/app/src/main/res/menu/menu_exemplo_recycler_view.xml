@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_linear_layout"
+        android:title="@string/linear_layout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_grid_layout"
+        android:title="@string/grid_layout"
+        app:showAsAction="always" />
+</menu>

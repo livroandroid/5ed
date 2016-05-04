@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo-Fragments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_demo_fragment">Fragment</string>
+    <string name="title_activity_demo_fragment_api">Fragment API</string>
+    <string name="title_activity_main">Fragments</string>
+    <string name="find_frag1_by_id">Find Frag1 By Id</string>
+    <string name="find_frag2_by_tag">Find Frag2 By Tag</string>
+    <string name="find_frag3_by_tag">Find Frag3 By Tag</string>
+    <string name="add_frag2">Add Frag2</string>
+    <string name="remove_frag2">Remover Frag2</string>
+    <string name="replace_frag3">Replace Frag3</string>
+    <string name="add_frag4_args">Add Frag4 Args</string>
+    <string name="add_start_activity">Start Activity</string>
+    <string name="add_hello_activity">Hello Activity</string>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="hello_frag3">Hello Frag3</string>
+
+</resources>

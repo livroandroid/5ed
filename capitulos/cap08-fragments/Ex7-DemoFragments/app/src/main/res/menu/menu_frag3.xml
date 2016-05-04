@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_hello_frag3"
+        android:title="@string/hello_frag3"
+        android:icon="@drawable/smile1"
+        app:showAsAction="always" />
+
+</menu>

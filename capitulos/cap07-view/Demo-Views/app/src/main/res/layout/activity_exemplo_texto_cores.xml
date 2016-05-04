@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Direito as cores -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:text="@string/msg_azul_e_branco"
+        android:textColor="@color/branco"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/verde"
+        android:text="@string/msg_verde_e_branco"
+        android:textColor="@color/branco"
+        android:textStyle="bold" />
+
+    <!-- Texto com @style -->
+
+    <TextView
+        style="@style/estiloExemplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/msg_vermelho_e_branco" />
+
+</LinearLayout>

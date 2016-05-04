@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.livroandroid.handler" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name=".SplashScreenActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.livroandroid.handler.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".DemoHandlerMessageActivity"
+            android:label="@string/title_activity_demo_handler_message"
+            android:parentActivityName="br.com.livroandroid.handler.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.handler.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DemoHandlerRunnableActivity"
+            android:label="@string/title_activity_demo_handler_runnable"
+            android:parentActivityName="br.com.livroandroid.handler.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.handler.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DownloadImagemActivity"
+            android:label="@string/title_activity_download_imagem"
+            android:parentActivityName="br.com.livroandroid.handler.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.handler.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReDownloadImagemActivity"
+            android:label="@string/title_activity_download_imagem"
+            android:parentActivityName="br.com.livroandroid.handler.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.handler.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ContadorActivity"
+            android:label="@string/title_activity_contador"
+            android:parentActivityName="br.com.livroandroid.handler.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.handler.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

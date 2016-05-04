@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/PlanetasFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="br.com.livroandroid.planetas.PlanetasFragment"
+        tools:layout="@layout/fragment_planetas" />
+
+</RelativeLayout>

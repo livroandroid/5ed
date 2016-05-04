@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/y"
+        android:textSize="18sp" />
+
+    <br.com.livroandroid.sensores.BonecoAndroidView
+        android:id="@+id/bonecoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+</LinearLayout>

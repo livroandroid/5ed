@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ThreadsHandler</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_demo_handler_message">Handler Message</string>
+    <string name="title_activity_demo_handler_runnable">Handler Runnable</string>
+    <string name="title_activity_download_imagem">Download Imagem</string>
+    <string name="title_activity_splash_screen">Splash Screen</string>
+    <string name="title_activity_contador">Contador</string>
+</resources>

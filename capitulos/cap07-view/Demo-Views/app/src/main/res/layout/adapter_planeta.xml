@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+        <!-- Foto do carro -->
+        <ImageView
+            android:id="@+id/imgPlaneta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/planeta_03_terra" />
+        <!-- Barra de progresso enquanto carrega a foto -->
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginRight="6dp"
+            android:gravity="center|center_vertical"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <!-- Nome carro -->
+    <TextView
+        android:id="@+id/tNomePlaneta"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000" />
+</LinearLayout>
+

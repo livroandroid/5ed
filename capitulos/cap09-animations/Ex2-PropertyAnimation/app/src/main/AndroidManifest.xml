@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.livroandroid.property_animation">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="br.com.livroandroid.property_animation.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.livroandroid.property_animation.ExemploValueAnimator"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity" />
+        <activity
+            android:name="br.com.livroandroid.property_animation.AlphaAnim"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity" />
+        <activity
+            android:name="br.com.livroandroid.property_animation.RotateAnim"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity" />
+        <activity
+            android:name="br.com.livroandroid.property_animation.ScaleAnim"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity" />
+        <activity
+            android:name="br.com.livroandroid.property_animation.TranslateAnim"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity" />
+        <activity
+            android:name="br.com.livroandroid.property_animation.ExemploAnimatorSet"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity" />
+        <activity
+            android:name="br.com.livroandroid.property_animation.ExemploAnimatorListenerApagarTela"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity" />
+        <activity
+            android:name="br.com.livroandroid.property_animation.ExemploViewPropertyAnimatorActivity"
+            android:label="@string/title_activity_exemplo_view_property_animator"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.property_animation.MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.livroandroid.property_animation.ExemploValueAnimatorTextViewActivity"
+            android:label="@string/title_activity_exemplo_value_animator_text_view"
+            android:parentActivityName="br.com.livroandroid.property_animation.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.livroandroid.property_animation.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

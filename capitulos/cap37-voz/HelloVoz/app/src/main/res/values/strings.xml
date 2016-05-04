@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloVoz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_hello_tts">Hello TTS</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_check_data">Check Data</string>
+    <string name="action_install_data">Install Data</string>
+    <string name="action_pt_br">Voz pt_BR</string>
+    <string name="action_en_us">Voz en_US</string>
+    <string name="title_activity_hello_recognizer_intent">Recognizer Intent</string>
+    <string name="title_activity_hello_speech_recognizer">Recognizer Listener</string>
+
+</resources>

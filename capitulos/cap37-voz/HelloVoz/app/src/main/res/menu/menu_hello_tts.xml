@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_pt_br"
+        android:title="@string/action_pt_br"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_en_us"
+        android:title="@string/action_en_us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_check_data"
+        android:title="@string/action_check_data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_install_data"
+        android:title="@string/action_install_data"
+        app:showAsAction="never" />
+</menu>

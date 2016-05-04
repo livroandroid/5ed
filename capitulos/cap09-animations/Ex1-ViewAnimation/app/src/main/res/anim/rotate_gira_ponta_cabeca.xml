@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Rotação do ângulo 0 para 180 graus. -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fillAfter="true"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="180" />

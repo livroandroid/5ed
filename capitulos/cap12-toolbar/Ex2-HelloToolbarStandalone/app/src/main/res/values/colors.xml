@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cores do Material Theme -->
+    <color name="text_primary">#ffffff</color>
+    <color name="primary">#03A9F4</color>
+    <color name="primary_dark">#01579B</color>
+    <color name="accent">#F44336</color>
+
+</resources>

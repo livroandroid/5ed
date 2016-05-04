@@ -1,0 +1,29 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--   Cor primária da sua marca -->
+        <item name="colorPrimary">@color/primary</item>
+        <!--   Variação escura da cor primária para a status bar e contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!--   Cor para de acentuação para as views (checkbox, textfield, etc) -->
+        <item name="colorAccent">@color/accent</item>
+
+        <!--
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        -->
+    </style>
+
+    <!-- Tema que desliga a action bar padrão -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--   Cor primária da sua marca -->
+        <item name="colorPrimary">@color/primary</item>
+        <!--   Variação escura da cor primária para a status bar e contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!--   Cor para de acentuação para as views (checkbox, textfield, etc) -->
+        <item name="colorAccent">@color/accent</item>
+
+    </style>
+
+</resources>
