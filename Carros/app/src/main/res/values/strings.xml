@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Carros</string>
+    <string name="app_name">Carros5ed</string>
 
     <!-- A -->
     <string name="action_about">Sobre</string>
@@ -52,8 +52,8 @@ Versao %s<br><br>
 
 
     <!-- N -->
-    <string name="nav_drawer_username">Ricardo Lecheta</string>
-    <string name="nav_drawer_email">rlecheta@gmail.com</string>
+    <string name="nav_drawer_username">Ricardo R Lecheta</string>
+    <string name="nav_drawer_email">livroandroid@gmail.com</string>
     <string name="nome">Nome</string>
 
     <!-- O -->
