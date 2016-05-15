@@ -9,7 +9,6 @@ import android.widget.EditText;
 import org.w3c.dom.Element;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +19,7 @@ import livroandroid.lib.utils.XMLUtils;
  * Demonstra como fazer uma requisição do tipo POST
  */
 public class CelsiusToFahrenheitPostActivity extends AppCompatActivity {
-    String URL = "http://www.w3schools.com/webservices/tempconvert.asmx/CelsiusToFahrenheit";
+    String URL = "http://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit";
     private EditText tCelcius;
     private EditText tFahrenheit;
 

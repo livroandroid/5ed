@@ -68,10 +68,5 @@ Versao %s<br><br>
     <string name="vazio" />
     <string name="video">Vídeo</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
-
 
 </resources>

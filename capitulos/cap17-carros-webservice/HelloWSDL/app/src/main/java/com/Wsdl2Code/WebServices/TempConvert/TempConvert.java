@@ -28,8 +28,8 @@ import java.util.List;
 
 public class TempConvert {
 
-    public String NAMESPACE = "http://www.w3schools.com/webservices/";
-    public String url = "http://www.w3schools.com/webservices/tempconvert.asmx";
+    public String NAMESPACE = "http://www.w3schools.com/xml/";
+    public String url = "http://www.w3schools.com/xml/tempconvert.asmx";
     public int timeOut = 60000;
     public IWsdl2CodeEvents eventHandler;
     public SoapProtocolVersion soapVersion;
@@ -99,15 +99,15 @@ public class TempConvert {
         SoapSerializationEnvelope soapEnvelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
         soapEnvelope.implicitTypes = true;
         soapEnvelope.dotNet = true;
-        SoapObject soapReq = new SoapObject("http://www.w3schools.com/webservices/", "FahrenheitToCelsius");
+        SoapObject soapReq = new SoapObject("http://www.w3schools.com/xml/", "FahrenheitToCelsius");
         soapReq.addProperty("Fahrenheit", fahrenheit);
         soapEnvelope.setOutputSoapObject(soapReq);
         HttpTransportSE httpTransport = new HttpTransportSE(url, timeOut);
         try {
             if (headers != null) {
-                httpTransport.call("http://www.w3schools.com/webservices/FahrenheitToCelsius", soapEnvelope, headers);
+                httpTransport.call("http://www.w3schools.com/xml/FahrenheitToCelsius", soapEnvelope, headers);
             } else {
-                httpTransport.call("http://www.w3schools.com/webservices/FahrenheitToCelsius", soapEnvelope);
+                httpTransport.call("http://www.w3schools.com/xml/FahrenheitToCelsius", soapEnvelope);
             }
             Object retObj = soapEnvelope.bodyIn;
             if (retObj instanceof SoapFault) {
@@ -176,15 +176,15 @@ public class TempConvert {
         SoapSerializationEnvelope soapEnvelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
         soapEnvelope.implicitTypes = true;
         soapEnvelope.dotNet = true;
-        SoapObject soapReq = new SoapObject("http://www.w3schools.com/webservices/", "CelsiusToFahrenheit");
+        SoapObject soapReq = new SoapObject("http://www.w3schools.com/xml/", "CelsiusToFahrenheit");
         soapReq.addProperty("Celsius", celsius);
         soapEnvelope.setOutputSoapObject(soapReq);
         HttpTransportSE httpTransport = new HttpTransportSE(url, timeOut);
         try {
             if (headers != null) {
-                httpTransport.call("http://www.w3schools.com/webservices/CelsiusToFahrenheit", soapEnvelope, headers);
+                httpTransport.call("http://www.w3schools.com/xml/CelsiusToFahrenheit", soapEnvelope, headers);
             } else {
-                httpTransport.call("http://www.w3schools.com/webservices/CelsiusToFahrenheit", soapEnvelope);
+                httpTransport.call("http://www.w3schools.com/xml/CelsiusToFahrenheit", soapEnvelope);
             }
             Object retObj = soapEnvelope.bodyIn;
             if (retObj instanceof SoapFault) {

@@ -13,13 +13,11 @@ import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 
-import java.net.URL;
-
 /**
  * Demonstra como utilizar a lib KSOAP
  */
 public class CelsiusToFahrenheitKSoapActivity extends AppCompatActivity {
-    private static final String URL = "http://www.w3schools.com/webservices/CelsiusToFahrenheit";
+    private static final String URL = "http://www.w3schools.com/xml/CelsiusToFahrenheit";
     private EditText tCelcius;
     private EditText tFahrenheit;
 
@@ -37,7 +35,7 @@ public class CelsiusToFahrenheitKSoapActivity extends AppCompatActivity {
             public void run() {
                 try {
                     String celcius = tCelcius.getText().toString();
-                    final String fahrenheit = CelsiusToFahrenheit("http://www.w3schools.com/webservices/tempconvert.asmx", celcius);
+                    final String fahrenheit = CelsiusToFahrenheit("http://www.w3schools.com/xml/tempconvert.asmx", celcius);
 
                     runOnUiThread(new Runnable() {
                         @Override
@@ -56,7 +54,7 @@ public class CelsiusToFahrenheitKSoapActivity extends AppCompatActivity {
         SoapSerializationEnvelope soapEnvelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
         soapEnvelope.implicitTypes = true;
         soapEnvelope.dotNet = true;
-        SoapObject soapReq = new SoapObject("http://www.w3schools.com/webservices/", "CelsiusToFahrenheit");
+        SoapObject soapReq = new SoapObject("http://www.w3schools.com/xml/", "CelsiusToFahrenheit");
         soapReq.addProperty("Celsius", celsius);
         soapEnvelope.setOutputSoapObject(soapReq);
         int timeOut = 60000;
