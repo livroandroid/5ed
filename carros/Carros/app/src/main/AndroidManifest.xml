@@ -68,17 +68,8 @@
         </activity>
         <activity android:name=".activity.SiteLivroActivity" />
         <activity
-            android:name=".activity.prefs.ConfiguracoesActivivity"
+            android:name=".activity.prefs.ConfiguracoesActivity"
             android:label="Configurações">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
-        </activity>
-        <activity
-            android:name=".activity.prefs.ConfiguracoesV11Activivity"
-            android:label="Configurações"
-            android:parentActivityName=".activity.MainActivity"
-            android:theme="@style/AppTheme.Material">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />

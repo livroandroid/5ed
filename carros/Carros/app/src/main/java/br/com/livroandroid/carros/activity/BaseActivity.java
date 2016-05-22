@@ -13,9 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import br.com.livroandroid.carros.R;
-import br.com.livroandroid.carros.activity.prefs.ConfiguracoesActivivity;
-import br.com.livroandroid.carros.activity.prefs.ConfiguracoesV11Activivity;
-import livroandroid.lib.utils.AndroidUtils;
+import br.com.livroandroid.carros.activity.prefs.ConfiguracoesActivity;
 
 public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
     protected DrawerLayout drawerLayout;
@@ -97,12 +95,7 @@ public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
                 startActivity(new Intent(getContext(), SiteLivroActivity.class));
                 break;
             case R.id.nav_item_settings:
-                if (AndroidUtils.isAndroid3Honeycomb()) {
-                    startActivity(new Intent(this, ConfiguracoesV11Activivity.class));
-                } else {
-                    startActivity(new Intent(this, ConfiguracoesActivivity.class));
-                }
-
+                startActivity(new Intent(this, ConfiguracoesActivity.class));
                 break;
         }
     }
