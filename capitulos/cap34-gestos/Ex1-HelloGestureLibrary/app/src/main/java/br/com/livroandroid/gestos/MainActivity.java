@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements OnGesturePerforme
 
         // Solicita as permissões
         String[] permissoes = new String[]{
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.READ_EXTERNAL_STORAGE
         };
         PermissionUtils.validate(this, 0, permissoes);
