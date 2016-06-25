@@ -8,7 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.io.File;
 
 
-public class SalvarGestoActivity extends ActionBarActivity implements GestureOverlayView.OnGesturePerformedListener {
+public class SalvarGestoActivity extends AppCompatActivity implements GestureOverlayView.OnGesturePerformedListener {
 
     private TextView text;
     private GestureLibrary gestureLib;

@@ -1,7 +1,9 @@
 package br.com.livroandroid.gestos;
 
-import android.app.Activity;
+import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.gesture.Gesture;
 import android.gesture.GestureLibraries;
 import android.gesture.GestureLibrary;
@@ -12,10 +14,11 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,16 +26,19 @@ import android.widget.Toast;
 import java.io.File;
 import java.util.ArrayList;
 
+import livroandroid.lib.utils.PermissionUtils;
+
 /**
  * Exemplo de gestos
  *
  * @author rlecheta
  */
 
-public class MainActivity extends ActionBarActivity implements OnGesturePerformedListener {
+public class MainActivity extends AppCompatActivity implements OnGesturePerformedListener {
     private GestureLibrary gestureLib;
     private TextView text;
     private ImageView img;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +50,44 @@ public class MainActivity extends ActionBarActivity implements OnGesturePerforme
         GestureOverlayView gestureOverlayView = (GestureOverlayView) findViewById(R.id.gestureView);
         gestureOverlayView.addOnGesturePerformedListener(this);
 
+        // Solicita as permissões
+        String[] permissoes = new String[]{
+                Manifest.permission.READ_EXTERNAL_STORAGE
+        };
+        PermissionUtils.validate(this, 0, permissoes);
+
         // res/raw
         // gestureLib = GestureLibraries.fromRawResource(this, R.raw.gestures);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        for (int result : grantResults) {
+            if (result == PackageManager.PERMISSION_DENIED) {
+                // Alguma permissão foi negada, agora é com você :-)
+                alertAndFinish();
+                return;
+            }
+        }
+        // Se chegou aqui está OK :-)
+    }
+
+    private void alertAndFinish() {
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(R.string.app_name).setMessage("Para utilizar este aplicativo, você precisa aceitar as permissões.");
+            // Add the buttons
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    finish();
+                }
+            });
+            android.support.v7.app.AlertDialog dialog = builder.create();
+            dialog.show();
+
+        }
     }
 
     @Override
@@ -57,7 +99,7 @@ public class MainActivity extends ActionBarActivity implements OnGesturePerforme
 
     @Override
     public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
-        if(gestureLib == null) return;
+        if (gestureLib == null) return;
         // Faz a biblioteca de gestos reconhecer o movimento
         ArrayList<Prediction> predictions = gestureLib.recognize(gesture);
         Prediction maxScore = null;
@@ -100,11 +142,12 @@ public class MainActivity extends ActionBarActivity implements OnGesturePerforme
 
     public void readGestures() {
         File file = new File(Environment.getExternalStorageDirectory(), "gestures");
-        if(file.exists()) {
+        Log.d("livroandroid", "File Gestures: " + file);
+        if (file.exists()) {
             gestureLib = GestureLibraries.fromFile(file);
         }
         if (gestureLib != null && gestureLib.load()) {
-            Toast.makeText(this,"Biblioteca de gestos lida com sucesso.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Biblioteca de gestos lida com sucesso.", Toast.LENGTH_SHORT).show();
         }
     }
 }
