@@ -20,7 +20,7 @@ import android.widget.Toast;
  * @author rlecheta
  */
 public class MainActivity extends AppCompatActivity {
-    private static final String URL = "http://livroandroid.com.br/imgs/livro_android.png";
+    private static final String URL = "https://s3.amazonaws.com/static.novatec.com.br/capas-ampliadas/capa-ampliada-9788575224687.jpg";
     private ProgressBar progress;
     private ImageView imgView;
     private Bitmap bitmap;

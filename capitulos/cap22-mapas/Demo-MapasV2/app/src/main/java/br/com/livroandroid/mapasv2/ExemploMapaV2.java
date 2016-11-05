@@ -16,6 +16,7 @@ import com.google.android.gms.maps.GoogleMap.InfoWindowAdapter;
 import com.google.android.gms.maps.GoogleMap.OnCameraChangeListener;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
@@ -34,69 +35,73 @@ import com.google.android.gms.maps.model.PolylineOptions;
  *
  */
 public class ExemploMapaV2 extends android.support.v4.app.FragmentActivity implements OnMapClickListener, OnCameraChangeListener {
-	protected GoogleMap map;
 	private SupportMapFragment mapFragment;
 	protected LivroAndroidLocationSource locationSource;
+	protected GoogleMap map;
 
 	@Override
 	protected void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 
 		setContentView(R.layout.exemplo_mapa_v2);
+
+		mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
-		
-		configureMap();
+
+		// Recupera o objeto GoogleMap
+		mapFragment.getMapAsync(new OnMapReadyCallback() {
+			@Override
+			public void onMapReady(GoogleMap map) {
+				// O mapa inicia de forma assíncrona.
+				initMap(map);
+			}
+		});
 	}
 
-	protected void configureMap() {
-		if(map == null) {
-			mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-			
-			// Recupera o objeto GoogleMap
-			map = mapFragment.getMap();
+	private void initMap(GoogleMap map) {
+		if(map != null) {
+			this.map = map;
 
-			if(map != null) {
-				// Configura o tipo do mapa
-				map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+			// Configura o tipo do mapa
+			map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
-				// Localização do mapa (Av. Paulista - SP)
-				LatLng latLng = new LatLng(-23.564224, -46.653156);
-				LatLng latLng2 = new LatLng(-23.555696, -46.662627);
+			// Localização do mapa (Av. Paulista - SP)
+			LatLng latLng = new LatLng(-23.564224, -46.653156);
+			LatLng latLng2 = new LatLng(-23.555696, -46.662627);
 
-				final CameraPosition position = new CameraPosition.Builder()
-						.target(latLng) 	// Localização
-						.bearing(130)	 	// Direção em que a cÂmera está apontando em graus
-						.tilt(0) 			// Ângulo que a cÂmera está posicionada em graus (0 a 90)
-						.zoom(17) 			// Zoom
-						.build();
+			final CameraPosition position = new CameraPosition.Builder()
+					.target(latLng) 	// Localização
+					.bearing(130)	 	// Direção em que a cÂmera está apontando em graus
+					.tilt(0) 			// Ângulo que a cÂmera está posicionada em graus (0 a 90)
+					.zoom(17) 			// Zoom
+					.build();
 
-				CameraUpdate update = CameraUpdateFactory.newCameraPosition(position);
+			CameraUpdate update = CameraUpdateFactory.newCameraPosition(position);
 
-				// Centraliza o mapa com animação de 10 segundos
-				map.animateCamera(update);
+			// Centraliza o mapa com animação de 10 segundos
+			map.animateCamera(update);
 
-				// Eventos
-				map.setOnMapClickListener(this);
+			// Eventos
+			map.setOnMapClickListener(this);
 
-				// Adiciona os marcadores
-				adicionarMarcador(map, latLng);
-				adicionarMarcador(map, latLng2);
+			// Adiciona os marcadores
+			adicionarMarcador(map, latLng);
+			adicionarMarcador(map, latLng2);
 
 //				adicionaPolyline(map, latLng, latLng2);
-				
-//				testePolyline(map);
-				testePolygon(map);
 
-				// Localização
-				locationSource = new LivroAndroidLocationSource();
-				map.setMyLocationEnabled(true);
-				map.setLocationSource(locationSource);
-				locationSource.setLocation(latLng);
-			}
+//				testePolyline(map);
+			testePolygon(map);
+
+			// Localização
+			locationSource = new LivroAndroidLocationSource();
+			map.setMyLocationEnabled(true);
+			map.setLocationSource(locationSource);
+			locationSource.setLocation(latLng);
 		}
 	}
 
@@ -124,7 +129,7 @@ public class ExemploMapaV2 extends android.support.v4.app.FragmentActivity imple
 		polygon.setFillColor(Color.YELLOW);
 	}
 
-	protected void adicionaPolyline(GoogleMap map2,LatLng latLng, LatLng latLng2) {
+	protected void adicionaPolyline(GoogleMap map,LatLng latLng, LatLng latLng2) {
 		// Desenha uma linha entre dois pontos
 		PolylineOptions line = new PolylineOptions();
 		line.add(new LatLng(latLng.latitude, latLng.longitude));

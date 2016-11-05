@@ -1,11 +1,13 @@
 package br.com.livroandroid.multimidia.audio;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
@@ -40,7 +42,11 @@ public class DemoRecordAudioActivity extends ActionBarActivity {
                 file = SDCardUtils.getPublicFile("audio.mp3", Environment.DIRECTORY_MUSIC);
                 // Chama a intent informando o arquivo para salvar a foto
                 Intent i = new Intent(MediaStore.Audio.Media.RECORD_SOUND_ACTION);
-                i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
+
+                Context context = getBaseContext();
+                Uri uri = FileProvider.getUriForFile(context, context.getApplicationContext().getPackageName() + ".provider", file);
+                i.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+
                 if (IntentUtils.isAvailable(getBaseContext(), i)) {
                     startActivityForResult(i, 0);
                 } else {

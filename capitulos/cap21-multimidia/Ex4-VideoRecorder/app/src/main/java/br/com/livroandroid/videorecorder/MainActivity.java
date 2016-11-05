@@ -1,10 +1,12 @@
 package br.com.livroandroid.videorecorder;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -37,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 file = SDCardUtils.getPublicFile("video.mp4", Environment.DIRECTORY_MOVIES);
                 // Chama a intent informando o arquivo para salvar a foto
                 Intent i = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
-                i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
+                Context context = getBaseContext();
+                Uri uri = FileProvider.getUriForFile(context, context.getApplicationContext().getPackageName() + ".provider", file);
+                i.putExtra(MediaStore.EXTRA_OUTPUT, uri);
                 startActivityForResult(i, 0);
             }
         });

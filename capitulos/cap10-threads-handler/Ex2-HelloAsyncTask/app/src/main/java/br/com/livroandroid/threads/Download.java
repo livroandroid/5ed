@@ -13,7 +13,9 @@ import java.net.URL;
 public class Download {
     public static Bitmap downloadBitmap(String url) throws IOException {
         try {
-            Thread.sleep(3000);
+            // Só para mostrar o ProgressBar girando
+            // Mas não faça isso em produção.
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
         }
 

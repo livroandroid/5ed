@@ -17,6 +17,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.InfoWindowAdapter;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
@@ -43,7 +44,16 @@ public class ExemploMapaV2_Completo extends Activity {
 		setContentView(R.layout.exemplo_mapa_v2);
 
 		MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
-		map = mapFragment.getMap();
+		mapFragment.getMapAsync(new OnMapReadyCallback() {
+			@Override
+			public void onMapReady(GoogleMap googleMap) {
+				initMap(googleMap);
+			}
+		});
+	}
+
+	private void initMap(GoogleMap googleMap) {
+
 
 		// Configura o modo do mapa
 		map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
@@ -71,11 +81,11 @@ public class ExemploMapaV2_Completo extends Activity {
 
 		//instancia um novo Polyline e adiciona pontos para definir um retângulo
 		PolylineOptions rectOptions = new PolylineOptions()
-		    .add(new LatLng(-25.440824,-49.280769))
-		    .add(new LatLng(-25.440867,-49.277876))
-		    .add(new LatLng(-25.443393,-49.278331))
-			.add(new LatLng(-25.443436,-49.281546))
-			.add(new LatLng(-25.440824,-49.280769));
+				.add(new LatLng(-25.440824,-49.280769))
+				.add(new LatLng(-25.440867,-49.277876))
+				.add(new LatLng(-25.443393,-49.278331))
+				.add(new LatLng(-25.443436,-49.281546))
+				.add(new LatLng(-25.440824,-49.280769));
 
 		// configura a cor do retÂngulo para azul
 		rectOptions.color(Color.BLUE);

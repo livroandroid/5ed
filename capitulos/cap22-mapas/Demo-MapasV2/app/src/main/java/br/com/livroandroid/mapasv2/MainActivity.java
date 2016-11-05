@@ -5,6 +5,7 @@ import android.app.AlertDialog.Builder;
 import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
@@ -39,6 +40,30 @@ public class MainActivity extends ListActivity {
         };
 
         this.setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items));
+
+        // Lista de permissões necessárias.
+        String permissions[] = new String[]{
+                android.Manifest.permission.ACCESS_FINE_LOCATION,
+                android.Manifest.permission.ACCESS_COARSE_LOCATION,
+        };
+
+        // Valida lista de permissões.
+        PermissionUtils.validate(this, 0, permissions);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        for (int result : grantResults) {
+            if (result == PackageManager.PERMISSION_DENIED) {
+                toast("Permissão de GPS negada");
+                finish();
+                return;
+            }
+        }
+
+        // Permissões concedidas, pode entrar.
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 
     @Override
