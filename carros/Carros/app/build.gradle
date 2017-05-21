@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.android.databinding'
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
 
-//    dataBinding {
-//        enabled = true
-//    }
+    dataBinding {
+        enabled = true
+    }
 
     dexOptions {
         javaMaxHeapSize "4g"

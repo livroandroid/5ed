@@ -20,19 +20,10 @@ android {
     }
 }
 
-repositories {
-    maven {
-        url "file:///home/ricardo/gradle/rep"
-    }
-    maven   {
-        url "file:///r:/home/ricardo/gradle/rep"
-    }
-}
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.google.android.support:wearable:1.1.0'
-    compile 'com.google.android.gms:play-services-wearable:7.0.0'
+    compile 'com.google.android.gms:play-services-wearable:10.2.6'
 
     compile project(':shared')
 
