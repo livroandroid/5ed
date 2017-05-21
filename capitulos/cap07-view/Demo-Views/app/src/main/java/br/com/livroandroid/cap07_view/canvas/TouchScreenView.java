@@ -51,7 +51,7 @@ public class TouchScreenView extends View {
         x = width / 2 - (larguraImg / 2);
         y = height / 2 - (alturaImg / 2);
 
-        Log.i(CATEGORIA, "onSizeChanged x/y: " + x + "/" + y);
+        Log.d(CATEGORIA, "onSizeChanged x/y: " + x + "/" + y);
     }
 
     @Override
@@ -78,7 +78,7 @@ public class TouchScreenView extends View {
         float x = event.getX();
         float y = event.getY();
 
-        Log.i(CATEGORIA, "onTouchEvent: x/y > " + x + "/" + y);
+        Log.d(CATEGORIA, "onTouchEvent: x/y > " + x + "/" + y);
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
