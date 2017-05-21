@@ -1,11 +1,11 @@
 package br.com.livroandroid.planetas;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 
-public class PlanetaActivity extends ActionBarActivity {
+public class PlanetaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

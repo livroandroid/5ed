@@ -1,6 +1,6 @@
 package br.com.livroandroid.gestos;
 
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.Menu;
@@ -10,7 +10,7 @@ import android.view.ScaleGestureDetector;
 import android.widget.TextView;
 
 
-public class ZoomActivity extends ActionBarActivity {
+public class ZoomActivity extends AppCompatActivity {
     TextView text;
     private ScaleGestureDetector gestureDetector;
     private MyImageView img;

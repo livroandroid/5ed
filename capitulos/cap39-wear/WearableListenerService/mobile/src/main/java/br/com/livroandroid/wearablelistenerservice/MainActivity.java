@@ -1,13 +1,13 @@
 package br.com.livroandroid.wearablelistenerservice;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
 import livroandroid.lib.wear.WearUtil;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private WearUtil wearUtil;
 

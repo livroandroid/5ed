@@ -1,7 +1,7 @@
 package br.com.livroandroid.asynctask.exemplo3;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import br.com.livroandroid.asynctask.R;
@@ -12,7 +12,7 @@ import br.com.livroandroid.asynctask.R;
  * Usa um fragment com retain.
  *
  */
-public class DownloadImagemLoaderActivity extends ActionBarActivity {
+public class DownloadImagemLoaderActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle icicle) {

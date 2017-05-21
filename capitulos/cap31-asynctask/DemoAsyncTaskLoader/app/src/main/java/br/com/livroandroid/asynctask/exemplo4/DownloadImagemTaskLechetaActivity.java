@@ -1,6 +1,6 @@
 package br.com.livroandroid.asynctask.exemplo4;
 
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import br.com.livroandroid.asynctask.R;
 import br.com.livroandroid.asynctask.exemplo3.DownloadImagemLoaderFragment;
 
-public class DownloadImagemTaskLechetaActivity extends ActionBarActivity {
+public class DownloadImagemTaskLechetaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

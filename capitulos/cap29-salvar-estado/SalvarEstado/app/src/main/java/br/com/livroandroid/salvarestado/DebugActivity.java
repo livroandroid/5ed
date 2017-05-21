@@ -1,13 +1,13 @@
 package br.com.livroandroid.salvarestado;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 /**
  * Created by Ricardo Lecheta on 22/09/2014.
  */
-public class DebugActivity extends ActionBarActivity {
+public class DebugActivity extends AppCompatActivity {
     protected static final String TAG = "livro";
 
     @Override

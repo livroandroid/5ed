@@ -5,7 +5,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,7 +21,7 @@ import br.com.livroandroid.asynctask.R;
  * vai executar várias vezes.
  *
  */
-public class DownloadImagemAsyncTaskActivity extends ActionBarActivity {
+public class DownloadImagemAsyncTaskActivity extends AppCompatActivity {
     private static final String URL = "http://livroandroid.com.br/imgs/livro_android.png";
     private ProgressDialog progress;
     private ImageView imgView;

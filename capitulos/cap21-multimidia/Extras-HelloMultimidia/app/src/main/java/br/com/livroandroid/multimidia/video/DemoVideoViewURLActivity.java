@@ -2,7 +2,7 @@ package br.com.livroandroid.multimidia.video;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
@@ -10,7 +10,7 @@ import android.widget.VideoView;
 import br.com.livroandroid.multimidia.R;
 
 
-public class DemoVideoViewURLActivity extends ActionBarActivity {
+public class DemoVideoViewURLActivity extends AppCompatActivity {
 
     private VideoView videoView;
     private int position;

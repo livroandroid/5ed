@@ -1,10 +1,10 @@
 package br.com.livroandroid.wearnotification;
 
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
-public class HelloActivity extends ActionBarActivity {
+public class HelloActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

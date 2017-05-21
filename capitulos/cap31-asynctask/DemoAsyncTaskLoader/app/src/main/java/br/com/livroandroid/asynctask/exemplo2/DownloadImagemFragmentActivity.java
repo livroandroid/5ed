@@ -1,7 +1,7 @@
 package br.com.livroandroid.asynctask.exemplo2;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import br.com.livroandroid.asynctask.R;
@@ -11,7 +11,7 @@ import br.com.livroandroid.asynctask.R;
  *
  * Se girar a tela o fragment mantém a imagem salva.
  */
-public class DownloadImagemFragmentActivity extends ActionBarActivity {
+public class DownloadImagemFragmentActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle icicle) {

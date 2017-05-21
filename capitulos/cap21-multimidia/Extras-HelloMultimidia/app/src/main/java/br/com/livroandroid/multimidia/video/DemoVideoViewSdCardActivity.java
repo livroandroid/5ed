@@ -2,7 +2,7 @@ package br.com.livroandroid.multimidia.video;
 
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.MediaController;
@@ -15,7 +15,7 @@ import br.com.livroandroid.multimidia.R;
 import livroandroid.lib.utils.SDCardUtils;
 
 
-public class DemoVideoViewSdCardActivity extends ActionBarActivity {
+public class DemoVideoViewSdCardActivity extends AppCompatActivity {
 
     private VideoView videoView;
 

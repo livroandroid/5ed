@@ -2,13 +2,13 @@ package br.com.livroandroid.multimidia.audio;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import br.com.livroandroid.multimidia.R;
 
 
-public class DemoMediaPlayerRawActivity extends ActionBarActivity {
+public class DemoMediaPlayerRawActivity extends AppCompatActivity {
 
     private MediaPlayer player;
 

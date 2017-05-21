@@ -2,7 +2,7 @@ package br.com.livroandroid.wearnotification;
 
 import android.content.Intent;
 import android.support.v4.app.RemoteInput;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import livroandroid.lib.utils.NotificationUtil;
 
 
-public class ReplyActivity extends ActionBarActivity {
+public class ReplyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -4,7 +4,7 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -15,7 +15,7 @@ import br.com.livroandroid.multimidia.R;
 import livroandroid.lib.utils.SDCardUtils;
 
 
-public class DemoMediaPlayerSdCardActivity extends ActionBarActivity {
+public class DemoMediaPlayerSdCardActivity extends AppCompatActivity {
 
     private MediaPlayer player;
 

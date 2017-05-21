@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class HelloSpeechRecognizerActivity extends ActionBarActivity  {
+public class HelloSpeechRecognizerActivity extends AppCompatActivity  {
     // Reconhecedor de voz
     private SpeechRecognizer stt;
     private ListView listView;

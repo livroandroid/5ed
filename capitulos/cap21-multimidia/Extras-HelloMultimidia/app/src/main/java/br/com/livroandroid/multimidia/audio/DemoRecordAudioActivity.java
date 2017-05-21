@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.content.FileProvider;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -25,7 +25,7 @@ import livroandroid.lib.utils.SDCardUtils;
  *
  * @author ricardo
  */
-public class DemoRecordAudioActivity extends ActionBarActivity {
+public class DemoRecordAudioActivity extends AppCompatActivity {
     // Caminho para salvar o arquivo
     private File file;
     private MediaPlayer player;

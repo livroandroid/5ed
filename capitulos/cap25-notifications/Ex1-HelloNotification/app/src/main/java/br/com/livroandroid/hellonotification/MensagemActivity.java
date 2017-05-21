@@ -1,11 +1,11 @@
 package br.com.livroandroid.hellonotification;
 
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 
-public class MensagemActivity extends ActionBarActivity {
+public class MensagemActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

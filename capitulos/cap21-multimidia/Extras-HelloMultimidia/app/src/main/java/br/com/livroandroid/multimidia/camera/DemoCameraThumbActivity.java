@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -15,7 +15,7 @@ import br.com.livroandroid.multimidia.R;
 /**
  * @author ricardo
  */
-public class DemoCameraThumbActivity extends ActionBarActivity {
+public class DemoCameraThumbActivity extends AppCompatActivity {
     private ImageView imgView;
 
     @Override
