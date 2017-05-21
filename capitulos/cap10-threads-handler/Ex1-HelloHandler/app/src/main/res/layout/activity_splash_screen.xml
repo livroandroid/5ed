@@ -8,12 +8,13 @@
         android:layout_height="wrap_content"
         android:text="Splash Screen"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
-    <ImageView android:src="@drawable/livro_android"
+    <ImageView
+        android:src="@drawable/livro_android"
         android:text="@string/hello_world"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
 </FrameLayout>
