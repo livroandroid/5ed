@@ -1,5 +1,7 @@
 # Livro Google Android 5ª edição
 
+* http://livroandroid.com.br
+
 Código compilado com Android Studio 3.0
 
 <pre>
@@ -20,7 +22,6 @@ compile 'com.google.android.gms:play-services-maps:10.2.6'
 compile 'com.google.android.gms:play-services-location:10.2.6'
 </pre>
 
-* http://livroandroid.com.br
 
 O aplicativo dos carros tem 2 diferenças entre a 5ª edição e 4ª edição:
 
