@@ -2,17 +2,23 @@
 
 Código compilado com Android Studio 3.0
 
+<pre>
 compileSdkVersion 25
 buildToolsVersion "25.0.3"
+</pre>
 
 - Libs de compatibilidade:
 
+<pre>
 compile 'com.android.support:appcompat-v7:25.3.1'
+</pre>
 
 - Google Play Services
 
+<pre>
 compile 'com.google.android.gms:play-services-maps:10.2.6'
 compile 'com.google.android.gms:play-services-location:10.2.6'
+</pre>
 
 * http://livroandroid.com.br
 
