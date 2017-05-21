@@ -103,7 +103,7 @@ public class CarroFragment extends BaseFragment {
                 public void onClickYes() {
                     toast("Carro [" + carro.nome + "] deletado.");
                     // Deleta o carro
-                    CarroDB db = new CarroDB(getActivity());
+                    CarroDB db = new CarroDB(getContext());
                     db.delete(carro);
                     // Fecha a activity
                     getActivity().finish();

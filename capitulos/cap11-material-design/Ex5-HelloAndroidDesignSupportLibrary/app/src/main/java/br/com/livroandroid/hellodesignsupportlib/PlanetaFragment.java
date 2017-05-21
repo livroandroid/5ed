@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Created by ricardo on 12/06/15.
  */
-class PlanetaFragment extends Fragment {
+public class PlanetaFragment extends Fragment {
     PlanetaAdapter adapter;
     private RecyclerView recyclerView;
     private List<Planeta> planetas;

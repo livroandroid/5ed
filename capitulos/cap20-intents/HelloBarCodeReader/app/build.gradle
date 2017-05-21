@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "br.com.livroandroid.hellobarcodereader"
-        minSdkVersion 9
-        targetSdkVersion 21
+        minSdkVersion 15
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }

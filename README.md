@@ -1,5 +1,19 @@
 # Livro Google Android 5ª edição
 
+Código compilado com Android Studio 3.0
+
+compileSdkVersion 25
+buildToolsVersion "25.0.3"
+
+- Libs de compatibilidade:
+
+compile 'com.android.support:appcompat-v7:25.3.1'
+
+- Google Play Services
+
+compile 'com.google.android.gms:play-services-maps:10.2.6'
+compile 'com.google.android.gms:play-services-location:10.2.6'
+
 * http://livroandroid.com.br
 
 O aplicativo dos carros tem 2 diferenças entre a 5ª edição e 4ª edição:

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "br.com.livroandroid.hellowsdl"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -26,11 +26,11 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
 
     // Biblioteca KSOAP2 para web services WSDL
     compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.2'
 
     // Biblioteca com classes utilitárias do livro
-    compile 'br.com.livroandroid:android-utils:1.0.5'
+    compile 'br.com.livroandroid:android-utils:1.0.6'
 }

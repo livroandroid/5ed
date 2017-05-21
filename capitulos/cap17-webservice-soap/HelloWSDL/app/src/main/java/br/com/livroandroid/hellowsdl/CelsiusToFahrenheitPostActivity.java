@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.w3c.dom.Element;
 
@@ -43,8 +44,13 @@ public class CelsiusToFahrenheitPostActivity extends AppCompatActivity {
                 params.put("Celsius", celcius);
 
                 try {
+                    /**
+                     * No ultimo teste que fiz este WS estava fora do ar :-(
+                     */
+
                     // Retorno: <string xmlns="http://www.w3schools.com/webservices/">33.8</string>
                     HttpHelper http = new HttpHelper();
+                    http.LOG_ON = true;
                     String s = http.doPost(URL, params, "UTF-8");
 
                     Element root = XMLUtils.getRoot(s, "UTF-8");
@@ -58,8 +64,15 @@ public class CelsiusToFahrenheitPostActivity extends AppCompatActivity {
                             tFahrenheit.setText(fahrenheit);
                         }
                     });
-                } catch (IOException e) {
+                } catch (final Exception e) {
                     Log.e("livroandroid", "Erro: " + e.getMessage(), e);
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getBaseContext(), "Erro: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
             }
         }.start();

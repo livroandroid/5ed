@@ -14,7 +14,7 @@
         android:id="@+id/arquivo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="/storage/15E1-1207/Movies/last_mohicans.3gp" />
+        android:text="/sdcard/Movies/last_mohicans.3gp" />
 
     <LinearLayout
         android:layout_width="match_parent"
