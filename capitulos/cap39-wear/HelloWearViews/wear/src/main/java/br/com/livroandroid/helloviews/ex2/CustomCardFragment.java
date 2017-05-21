@@ -14,7 +14,7 @@ import br.com.livroandroid.helloviews.R;
  */
 public class CustomCardFragment extends CardFragment {
     @Override
-    protected View onCreateContentView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateContentView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_custom_card, container, false);
         // title
         TextView tTitle = (TextView) view.findViewById(R.id.tTitle);
