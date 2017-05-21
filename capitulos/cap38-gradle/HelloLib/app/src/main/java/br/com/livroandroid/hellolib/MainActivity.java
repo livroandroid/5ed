@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /**
+         * Siga as instruções do livro e compile a lib MyLIB para funcionar.
+         *
+         * Corriga o build.gradle para apontar para a pasta onde está sua lib.
+         */
         ToastUtil.toast(this, "Teste Lib!");
     }
 

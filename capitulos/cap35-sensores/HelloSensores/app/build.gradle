@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "br.com.livroandroid.sensores"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -22,8 +22,9 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'br.com.livroandroid:android-utils:1.0.2'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.google.android.gms:play-services:8.1.0'
+
+    // Para o exemplo do Google FIT
+    compile 'com.google.android.gms:play-services-fitness:10.2.6'
 }

@@ -23,7 +23,7 @@ android {
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file:///home/ricardo/gradle/rep")
+            repository(url: "file:///Users/rlecheta/tmp/gradle/")
             pom.groupId = "br.com.livroandroid"
             pom.artifactId = "mylib"
             pom.version = "0.0.1"

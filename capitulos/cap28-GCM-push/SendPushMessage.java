@@ -22,12 +22,12 @@ public class SendPushMessage {
 	private static String DEVICE_REGISTRATION_ID = "APA91bEq6-RpN-ULVI1-J5gxhRjqchSJo3InhHGkyPgbdsXWumsLOs3eOw8Gjtp5Ww-nS25PwGWy76LQezcpeFrcabXAanuar3JOfhHmMCvbEvpX7ILlpDyXYKvon07Tnt-tnng8XPkSUk8I5j4JYg9jhL45uEa5DQ";
 	
 	// Chave criada no Console. Menu > API Access > (create new server key)
-	private static final String API_KEY = "AIzaSyCMCGxjvjeoAmI8jllDH4388EJI4qJFZsU";
+	private static final String API_KEY = "AIzaSyAFcR1x0Tp0rYl8enqWjr1g7W_hHimOILA";
 
 	public static void main(String[] args) throws IOException {
 		
 		Map<String, String> params = new HashMap<String, String>();
-		params.put("msg", "Olá ao vivo");
+		params.put("msg", "Olï¿½ ao vivo");
 		String result = post(API_KEY, DEVICE_REGISTRATION_ID, params );
 		System.out.println(result);
 	}
@@ -37,11 +37,11 @@ public class SendPushMessage {
 	 */
 	public static String post(String apiKey, String deviceRegistrationId, Map<String, String> params) throws IOException {
 
-		// Parâmetros necessários para o POST
+		// Parï¿½metros necessï¿½rios para o POST
 		StringBuilder postBody = new StringBuilder();
 		postBody.append("registration_id").append("=").append(deviceRegistrationId);
 		
-		// Cria os parâmetros chave=valor
+		// Cria os parï¿½metros chave=valor
 		Set<String> keys = params.keySet();
 		for (String key : keys) {
 			String value = params.get(key);
@@ -62,7 +62,7 @@ public class SendPushMessage {
 		conn.setRequestProperty("Content-Length", Integer.toString(postData.length));
 		conn.setRequestProperty("Authorization", "key=" + apiKey);
 
-		// Lê a resposta
+		// Lï¿½ a resposta
 		OutputStream out = conn.getOutputStream();
 		out.write(postData);
 		out.close();

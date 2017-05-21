@@ -18,7 +18,7 @@ public class JobUtil {
         ComponentName mServiceComponent = new ComponentName(context, cls);
         JobInfo.Builder builder = new JobInfo.Builder(id,mServiceComponent);
 
-        // Wi-Fi
+        // Apenas Wi-Fi
         builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED);
         // Carregando
         builder.setRequiresCharging(true);

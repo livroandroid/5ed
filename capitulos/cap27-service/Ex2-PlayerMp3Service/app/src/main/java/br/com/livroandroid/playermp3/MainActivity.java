@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "stop");
             interfaceMp3.stop();
         }
+        NotificationUtil.cancell(this,1);
     }
     @Override
     protected void onStop() {

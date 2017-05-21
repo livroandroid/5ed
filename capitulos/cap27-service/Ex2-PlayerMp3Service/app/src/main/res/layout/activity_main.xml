@@ -14,7 +14,7 @@
         android:id="@+id/tArquivo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="/storage/15E1-1207/Music/linkin_park1.mp3" />
+        android:text="/sdcard/Music/linkin_park1.mp3" />
 
     <LinearLayout
         android:layout_width="match_parent"

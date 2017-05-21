@@ -33,6 +33,6 @@ repositories {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.0'
-    compile 'com.google.android.gms:play-services:7.0.0'
-    compile 'br.com.livroandroid:android-utils:0.0.9'
+    compile 'com.google.android.gms:play-services-wearable:10.2.6'
+    compile 'br.com.livroandroid:android-utils:1.0.6'
 }
