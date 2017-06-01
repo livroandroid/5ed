@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import br.com.livroandroid.carros.R;
 import br.com.livroandroid.carros.fragments.CarrosFragment;
+import br.com.livroandroid.carros.fragments.SiteLivroFragment;
 
 public class SiteLivroActivity extends BaseActivity {
 
@@ -13,11 +14,10 @@ public class SiteLivroActivity extends BaseActivity {
         setContentView(R.layout.activity_site_livro);
         setUpToolbar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        // Título
-        getSupportActionBar().setTitle(getString(getIntent().getIntExtra("tipo", 0)));
+
         // Adiciona o fragment com o mesmo Bundle (args) da intent
         if (savedInstanceState == null) {
-            CarrosFragment frag = new CarrosFragment();
+            SiteLivroFragment frag = new SiteLivroFragment();
             frag.setArguments(getIntent().getExtras());
             getSupportFragmentManager().beginTransaction().add(R.id.container, frag).commit();
         }

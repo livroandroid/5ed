@@ -66,7 +66,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.SiteLivroActivity" />
+        <activity android:name=".activity.SiteLivroActivity" android:parentActivityName=".activity.MainActivity" />
         <activity
             android:name=".activity.prefs.ConfiguracoesActivity"
             android:label="Configurações">

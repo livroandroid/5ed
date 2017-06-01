@@ -38,7 +38,14 @@ public class ExemploProgressDialogActivity extends Activity {
                     final Bitmap imagem = BitmapFactory.decodeStream(in);
                     in.close();
                     // Atualiza a tela
-                    atualizaImagem(imagem);
+//                    atualizaImagem(imagem);
+
+//                    dialog.dismiss();
+                    ImageView imgView = (ImageView) findViewById(R.id.img);
+//                    imgView.setImageBitmap(imagem);
+
+                    imgView.setImageResource(R.drawable.android);
+
                 } catch (IOException e) {
                     // Uma aplica��o real deveria tratar este erro
                     Log.e("Erro ao fazer o download: ", e.getMessage(), e);
