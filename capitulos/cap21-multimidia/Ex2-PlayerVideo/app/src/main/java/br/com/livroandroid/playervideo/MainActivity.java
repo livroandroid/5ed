@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.pause).setOnClickListener(this);
         findViewById(R.id.stop).setOnClickListener(this);
 
-// Solicita as permissões
+        // Solicita as permissões
         String[] permissoes = new String[]{
                 Manifest.permission.READ_EXTERNAL_STORAGE
         };
