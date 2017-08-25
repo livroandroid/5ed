@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion "25.0.3"
 
     defaultConfig {
         applicationId "br.com.livroandroid.hellodesignsupportlib"
         minSdkVersion 21
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -22,9 +22,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.android.support:cardview-v7:25.3.1'
-    compile 'com.android.support:palette-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:26.0.0-beta2'
+    compile 'com.android.support:design26.0.0-beta2'
+    compile 'com.android.support:recyclerview-v726.0.0-beta2'
+    compile 'com.android.support:cardview-v726.0.0-beta2'
+    compile 'com.android.support:palette-v726.0.0-beta2'
 }
