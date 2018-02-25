@@ -17,14 +17,13 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Locale;
 
-import livroandroid.lib.activity.BaseActivity;
-import livroandroid.lib.utils.SDCardUtils;
+import br.com.livroandroid.voz.utils.SDCardUtils;
 
 
 /**
  * Mostra como fazer o Android falar com TTS Text-To-Speech.
  */
-public class HelloTTSActivity extends BaseActivity implements TextToSpeech.OnInitListener {
+public class HelloTTSActivity extends AppCompatActivity implements TextToSpeech.OnInitListener {
 
     private static final String TAG = "livroandroid";
     private static final int ACTION_CHECK_DATA_CODE = 1;
@@ -36,7 +35,7 @@ public class HelloTTSActivity extends BaseActivity implements TextToSpeech.OnIni
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hello_tts);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        tMsg = (TextView) findViewById(R.id.tMsg);
+        tMsg = findViewById(R.id.tMsg);
         tts = new TextToSpeech(this, this);
     }
 
@@ -123,6 +122,10 @@ public class HelloTTSActivity extends BaseActivity implements TextToSpeech.OnIni
                 startActivity(installIntent);
             }
         }
+    }
+
+    private void toast(String s) {
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -5,6 +5,6 @@ package br.com.livroandroid.mylibrary;
  */
 public class ClasseUtilitaria {
     public static String hello() {
-        return "Ricardo";
+        return "Hello da Lib";
     }
 }

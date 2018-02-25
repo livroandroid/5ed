@@ -26,5 +26,5 @@ dependencies {
     compile 'com.google.android.gms:play-services-wearable:11.8.0'
     compile project(':shared')
 
-    compile 'br.com.livroandroid:android-utils:1.0.6'
+    compile 'br.com.livroandroid:android-utils:5.0.1'
 }

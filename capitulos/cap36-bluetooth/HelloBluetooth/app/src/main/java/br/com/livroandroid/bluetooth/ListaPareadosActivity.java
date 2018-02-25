@@ -27,7 +27,7 @@ public class ListaPareadosActivity extends BluetoothCheckActivity implements OnI
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_lista_devices);
-        listView = (ListView) findViewById(R.id.listView);
+        listView = findViewById(R.id.listView);
     }
 
     @Override

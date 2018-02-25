@@ -32,7 +32,7 @@ public class ListaDevicesActivity extends BluetoothCheckActivity implements Adap
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_devices);
-        listView = (ListView) findViewById(R.id.listView);
+        listView = findViewById(R.id.listView);
         if(btfAdapter != null) {
             // Inicia a lista com os devices pareados
             lista = new ArrayList<BluetoothDevice>(btfAdapter.getBondedDevices());

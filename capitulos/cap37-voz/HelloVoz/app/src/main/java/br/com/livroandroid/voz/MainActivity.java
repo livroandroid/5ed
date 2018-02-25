@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // Solicita as permissões
         String[] permissoes = new String[]{
                 Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.RECORD_AUDIO
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.RECORD_AUDIO,
         };
         PermissionUtils.validate(this, 0, permissoes);
     }
