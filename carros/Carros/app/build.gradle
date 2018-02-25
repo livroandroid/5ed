@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     dataBinding {
         enabled = true
@@ -17,7 +17,7 @@ android {
     defaultConfig {
         applicationId "br.com.livroandroid.carros"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         multiDexEnabled true // due to exceeding the 65K methods dex limit

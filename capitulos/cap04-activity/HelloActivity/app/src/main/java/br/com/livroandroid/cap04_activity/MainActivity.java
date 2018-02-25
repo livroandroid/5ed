@@ -1,6 +1,5 @@
 package br.com.livroandroid.cap04_activity;
 
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 public class MainActivity extends DebugActivity {
 
     @Override
@@ -19,7 +17,7 @@ public class MainActivity extends DebugActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btLogin = (Button) findViewById(R.id.btLogin);
+        Button btLogin = findViewById(R.id.btLogin);
         btLogin.setOnClickListener(onClickLogin());
     }
 
@@ -27,10 +25,8 @@ public class MainActivity extends DebugActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView tLogin = (TextView)
-                        findViewById(R.id.tLogin);
-                TextView tSenha = (TextView)
-                        findViewById(R.id.tSenha);
+                TextView tLogin = findViewById(R.id.tLogin);
+                TextView tSenha = findViewById(R.id.tSenha);
                 String login = tLogin.getText().toString();
                 String senha = tSenha.getText().toString();
 
