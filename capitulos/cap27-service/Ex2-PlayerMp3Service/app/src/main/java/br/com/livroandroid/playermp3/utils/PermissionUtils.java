@@ -1,4 +1,4 @@
-package br.com.livroandroid.playermp3;
+package br.com.livroandroid.playermp3.utils;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;
