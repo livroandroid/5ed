@@ -20,7 +20,7 @@ import android.widget.Toast;
  * @author rlecheta
  */
 public class MainActivity extends AppCompatActivity {
-    private static final String URL = "https://s3.amazonaws.com/static.novatec.com.br/capas-ampliadas/capa-ampliada-9788575224687.jpg";
+    private static final String URL = "https://s3.novatec.com.br/capas/9788575224687.jpg";
     private ProgressBar progress;
     private ImageView imgView;
     private Bitmap bitmap;
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_main);
-        imgView = (ImageView) findViewById(R.id.img);
-        progress = (ProgressBar) findViewById(R.id.progress);
+        imgView = findViewById(R.id.img);
+        progress = findViewById(R.id.progress);
         // Faz o download
         downloadImagem();
     }

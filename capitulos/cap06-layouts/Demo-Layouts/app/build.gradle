@@ -20,8 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
-    compile 'com.android.support:gridlayout-v726.0.0-beta2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:gridlayout-v7:27.0.2'
 }
 

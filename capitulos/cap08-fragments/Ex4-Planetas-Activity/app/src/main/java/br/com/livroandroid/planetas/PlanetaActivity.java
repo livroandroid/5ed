@@ -14,7 +14,7 @@ public class PlanetaActivity extends AppCompatActivity {
 
         String planeta = getIntent().getStringExtra("planeta");
 
-        TextView text = (TextView) findViewById(R.id.text);
+        TextView text = findViewById(R.id.text);
         text.setText(planeta);
 
         getSupportActionBar().setTitle(planeta);

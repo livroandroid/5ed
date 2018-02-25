@@ -29,8 +29,8 @@ public class ReDownloadImagemActivity extends AppCompatActivity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_download_imagem);
-        imgView = (ImageView) findViewById(R.id.img);
-        progress = (ProgressBar) findViewById(R.id.progress);
+        imgView = findViewById(R.id.img);
+        progress = findViewById(R.id.progress);
         downloadImagem();
     }
     // Faz o download da imagem em uma nova Thread

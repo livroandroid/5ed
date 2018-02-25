@@ -23,7 +23,7 @@ import java.io.InputStream;
  * Mostra como atualizar a interface na UI Thread com o método runOnUiThread(runnable)
  */
 public class DownloadImagemActivity extends AppCompatActivity {
-    private static final String URL = "https://s3.amazonaws.com/static.novatec.com.br/capas-ampliadas/capa-ampliada-9788575224687.jpg";
+    private static final String URL = "https://s3.novatec.com.br/capas/9788575224687.jpg";
     private ProgressBar progress;
     @Override
     public void onCreate(Bundle icicle) {
