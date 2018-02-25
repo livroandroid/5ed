@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_main);
+
+        // Cria o channel necessário para Android 8
+        NotificationUtil.createChannel(this);
     }
 
     @Override

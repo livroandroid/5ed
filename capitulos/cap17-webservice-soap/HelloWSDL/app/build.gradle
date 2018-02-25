@@ -30,7 +30,4 @@ dependencies {
 
     // Biblioteca KSOAP2 para web services WSDL
     compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.2'
-
-    // Biblioteca com classes utilitárias do livro
-    compile 'br.com.livroandroid:android-utils:1.0.6'
 }

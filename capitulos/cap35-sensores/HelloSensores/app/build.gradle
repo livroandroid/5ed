@@ -26,5 +26,5 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
 
     // Para o exemplo do Google FIT
-    compile 'com.google.android.gms:play-services-fitness:10.2.6'
+    compile 'com.google.android.gms:play-services-fitness:11.8.0'
 }

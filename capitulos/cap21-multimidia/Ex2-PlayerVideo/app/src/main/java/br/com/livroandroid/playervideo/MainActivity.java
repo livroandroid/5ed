@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         setContentView(R.layout.activity_main);
 
-        text = (EditText) findViewById(R.id.arquivo);
+        text = findViewById(R.id.arquivo);
 
-        videoView = (VideoView) findViewById(R.id.videoView);
+        videoView = findViewById(R.id.videoView);
         videoView.setMediaController(new MediaController(this));
 
         findViewById(R.id.start).setOnClickListener(this);

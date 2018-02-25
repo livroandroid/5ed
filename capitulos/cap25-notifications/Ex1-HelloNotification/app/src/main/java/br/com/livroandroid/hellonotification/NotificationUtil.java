@@ -1,6 +1,8 @@
 package br.com.livroandroid.hellonotification;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -20,6 +22,24 @@ public class NotificationUtil {
 
     public static final String ACTION_VISUALIZAR = "br.com.livroandroid.hellonotification.ACTION_VISUALIZAR";
 
+    static final String CHANNEL_ID = "1";
+
+    public static void createChannel(Context context) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+
+            NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+            NotificationChannel c = new NotificationChannel(CHANNEL_ID,
+                    context.getString(R.string.app_name), NotificationManager.IMPORTANCE_DEFAULT);
+            c.setLightColor(Color.BLUE);
+            c.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
+//            c.enableVibration(false);
+//            c.enableLights(false);
+//            c.setSound();
+            manager.createNotificationChannel(c);
+        }
+    }
+
     private static PendingIntent getPendingIntent(Context context, Intent intent, int id) {
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
         stackBuilder.addParentStack(intent.getComponent());
@@ -32,7 +52,7 @@ public class NotificationUtil {
         PendingIntent p = getPendingIntent(context, intent, id);
 
         // Cria a notificação
-        NotificationCompat.Builder b = new NotificationCompat.Builder(context);
+        NotificationCompat.Builder b = new NotificationCompat.Builder(context,CHANNEL_ID);
         b.setDefaults(Notification.DEFAULT_ALL); // Ativa configurações padrão
         b.setSmallIcon(R.drawable.ic_notification_icon); // Ícone
         b.setContentTitle(contentTitle); // Título
@@ -59,7 +79,7 @@ public class NotificationUtil {
         inboxStyle.setSummaryText(contentText);
 
         // Cria a notificação
-        NotificationCompat.Builder b = new NotificationCompat.Builder(context);
+        NotificationCompat.Builder b = new NotificationCompat.Builder(context,CHANNEL_ID);
         b.setDefaults(Notification.DEFAULT_ALL); // Ativa configurações padrão
         b.setSmallIcon(R.drawable.ic_notification_icon); // Ícone
         b.setContentTitle(contentTitle); // Título
@@ -77,7 +97,7 @@ public class NotificationUtil {
         PendingIntent p = getPendingIntent(context, intent, id);
 
         // Cria a notificação
-        NotificationCompat.Builder b = new NotificationCompat.Builder(context);
+        NotificationCompat.Builder b = new NotificationCompat.Builder(context,CHANNEL_ID);
         b.setDefaults(Notification.DEFAULT_ALL); // Ativa configurações padrão
         b.setSmallIcon(R.drawable.ic_notification_icon); // Ícone
         b.setContentTitle(contentTitle); // Título
@@ -100,7 +120,7 @@ public class NotificationUtil {
         PendingIntent p = getPendingIntent(context, intent, id);
 
         // Cria a notificação
-        NotificationCompat.Builder b = new NotificationCompat.Builder(context);
+        NotificationCompat.Builder b = new NotificationCompat.Builder(context,CHANNEL_ID);
         b.setDefaults(Notification.DEFAULT_ALL); // Ativa configurações padrão
         b.setSmallIcon(R.drawable.ic_notification_icon); // Ícone
         b.setContentTitle(contentTitle); // Título
@@ -124,7 +144,7 @@ public class NotificationUtil {
         PendingIntent p = getPendingIntent(context, intent, id);
 
         // Cria a notificação
-        NotificationCompat.Builder b = new NotificationCompat.Builder(context);
+        NotificationCompat.Builder b = new NotificationCompat.Builder(context,CHANNEL_ID);
         b.setDefaults(Notification.DEFAULT_ALL); // Ativa configurações padrão
         b.setSmallIcon(R.drawable.ic_notification_icon); // Ícone
         b.setContentTitle(contentTitle); // Título

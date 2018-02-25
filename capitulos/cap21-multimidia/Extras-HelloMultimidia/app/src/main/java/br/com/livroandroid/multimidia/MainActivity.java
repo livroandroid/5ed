@@ -14,11 +14,11 @@ import br.com.livroandroid.multimidia.audio.DemoMediaPlayerSdCardActivity;
 import br.com.livroandroid.multimidia.audio.DemoRecordAudioActivity;
 import br.com.livroandroid.multimidia.camera.DemoCameraArquivoActivity;
 import br.com.livroandroid.multimidia.camera.DemoCameraThumbActivity;
+import br.com.livroandroid.multimidia.utils.IntentUtils;
 import br.com.livroandroid.multimidia.video.DemoRecordVideoActivity;
 import br.com.livroandroid.multimidia.video.DemoVideoViewRawActivity;
 import br.com.livroandroid.multimidia.video.DemoVideoViewSdCardActivity;
 import br.com.livroandroid.multimidia.video.DemoVideoViewURLActivity;
-import livroandroid.lib.utils.IntentUtils;
 
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {

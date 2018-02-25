@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.btEnviar).setOnClickListener(this);
         readMsg(getIntent());
+
+        // Cria o channel necessário para Android 8
+        NotificationUtil.createChannel(this);
     }
 
     @Override

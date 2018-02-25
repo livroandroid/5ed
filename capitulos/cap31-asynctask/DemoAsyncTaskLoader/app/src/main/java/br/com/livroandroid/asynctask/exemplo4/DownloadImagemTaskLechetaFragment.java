@@ -13,9 +13,9 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+import br.com.livroandroid.asynctask.BaseFragment;
 import br.com.livroandroid.asynctask.Download;
 import br.com.livroandroid.asynctask.R;
-import livroandroid.lib.fragment.BaseFragment;
 
 /**
  * A simple {@link Fragment} subclass.

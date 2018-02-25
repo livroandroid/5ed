@@ -16,9 +16,6 @@ import android.widget.VideoView;
 
 import java.io.File;
 
-import livroandroid.lib.utils.SDCardUtils;
-
-
 public class MainActivity extends AppCompatActivity {
     // Caminho para salvar o arquivo
     private File file;
@@ -29,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        videoView = (VideoView) findViewById(R.id.videoView);
+        videoView = findViewById(R.id.videoView);
 
-        ImageButton b = (ImageButton) findViewById(R.id.btAbrirCamera);
+        ImageButton b = findViewById(R.id.btAbrirCamera);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

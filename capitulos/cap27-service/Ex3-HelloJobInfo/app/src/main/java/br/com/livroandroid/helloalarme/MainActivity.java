@@ -5,12 +5,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import br.com.livroandroid.helloalarme.utils.NotificationUtil;
+
 public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        NotificationUtil.createChannel(this);
     }
 
     public void onClickAgendar(View view) {

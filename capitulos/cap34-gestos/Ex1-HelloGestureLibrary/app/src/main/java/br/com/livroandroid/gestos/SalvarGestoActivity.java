@@ -32,10 +32,10 @@ public class SalvarGestoActivity extends AppCompatActivity implements GestureOve
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_salvar_gesto);
 
-        text = (TextView) findViewById(R.id.text);
-        img = (ImageView) findViewById(R.id.img);
+        text = findViewById(R.id.text);
+        img = findViewById(R.id.img);
 
-        GestureOverlayView gestureOverlayView = (GestureOverlayView) findViewById(R.id.gestureView);
+        GestureOverlayView gestureOverlayView = findViewById(R.id.gestureView);
         gestureOverlayView.addOnGesturePerformedListener(this);
 
         // Carrega a biblioteca de gestos, a partir do arquivo salvo em /res/layout/gestures

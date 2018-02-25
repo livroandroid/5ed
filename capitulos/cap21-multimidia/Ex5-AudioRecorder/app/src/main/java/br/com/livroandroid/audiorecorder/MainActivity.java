@@ -15,9 +15,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import livroandroid.lib.utils.IntentUtils;
-
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "livroandroid";
     // Caminho para salvar o arquivo
@@ -34,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.pause).setOnClickListener(this);
         findViewById(R.id.stop).setOnClickListener(this);
 
-        text = (TextView) findViewById(R.id.tArquivo);
+        text = findViewById(R.id.tArquivo);
 
         final Context context = this;
 

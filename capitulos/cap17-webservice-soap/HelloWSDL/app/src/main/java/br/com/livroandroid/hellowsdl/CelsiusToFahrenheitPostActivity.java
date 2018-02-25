@@ -9,12 +9,11 @@ import android.widget.Toast;
 
 import org.w3c.dom.Element;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import livroandroid.lib.utils.HttpHelper;
-import livroandroid.lib.utils.XMLUtils;
+import br.com.livroandroid.hellowsdl.utils.HttpHelper;
+import br.com.livroandroid.hellowsdl.utils.XMLUtils;
 
 /**
  * Demonstra como fazer uma requisição do tipo POST

@@ -12,7 +12,7 @@ import android.widget.VideoView;
 import java.io.File;
 
 import br.com.livroandroid.multimidia.R;
-import livroandroid.lib.utils.SDCardUtils;
+import br.com.livroandroid.multimidia.utils.SDCardUtils;
 
 
 public class DemoVideoViewSdCardActivity extends AppCompatActivity {

@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 27
     buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "br.com.livroandroid.gestos"
         minSdkVersion 21
-        targetSdkVersion 24
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -21,7 +21,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'br.com.livroandroid:android-utils:1.0.6'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'br.com.livroandroid:android-utils:5.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
 }

@@ -45,20 +45,20 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
 
-    // Livro
+    // Android-Utils
     compile 'br.com.livroandroid:android-utils:5.0.1'
 
     // Google
-    compile 'com.android.support:appcompat-v7:26.0.1'
-    compile 'com.android.support:design:26.0.1'
-    compile 'com.android.support:support-v4:26.0.1'
-    compile 'com.android.support:recyclerview-v7:26.0.1'
-    compile 'com.android.support:cardview-v7:26.0.1'
-    compile 'com.android.support:preference-v7:26.0.1'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.android.support:support-v4:27.0.2'
+    compile 'com.android.support:recyclerview-v7:27.0.2'
+    compile 'com.android.support:cardview-v7:27.0.2'
+    compile 'com.android.support:preference-v7:27.0.2'
 
     // Play Services
-    compile 'com.google.android.gms:play-services-maps:11.2.0'
-    compile 'com.google.android.gms:play-services-location:11.2.0'
+    compile 'com.google.android.gms:play-services-maps:11.8.0'
+    compile 'com.google.android.gms:play-services-location:11.8.0'
 
     // Libs
     compile 'com.squareup.picasso:picasso:2.5.2'

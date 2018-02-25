@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity implements OnGesturePerforme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        text = (TextView) findViewById(R.id.text);
-        img = (ImageView) findViewById(R.id.img);
+        text = findViewById(R.id.text);
+        img = findViewById(R.id.img);
 
         // Configura o listener do GestureOverlayView
-        GestureOverlayView gestureOverlayView = (GestureOverlayView) findViewById(R.id.gestureView);
+        GestureOverlayView gestureOverlayView = findViewById(R.id.gestureView);
         gestureOverlayView.addOnGesturePerformedListener(this);
 
         // Solicita as permissões
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements OnGesturePerforme
             gestureLib = GestureLibraries.fromFile(file);
         }
         if (gestureLib != null && gestureLib.load()) {
-            Toast.makeText(this, "Biblioteca de gestos lida com sucesso.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Biblioteca de gestos lida com sucesso." + gestureLib.getGestureEntries().size(), Toast.LENGTH_SHORT).show();
         }
     }
 }

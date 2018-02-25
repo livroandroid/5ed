@@ -6,9 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import java.util.Calendar;
-import java.util.Date;
-
 /**
  * Created by ricardo on 13/03/15.
  */

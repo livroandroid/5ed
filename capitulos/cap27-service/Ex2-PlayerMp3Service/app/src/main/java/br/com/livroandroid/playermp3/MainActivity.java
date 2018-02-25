@@ -15,7 +15,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
-import livroandroid.lib.utils.NotificationUtil;
+import br.com.livroandroid.playermp3.utils.NotificationUtil;
+import br.com.livroandroid.playermp3.utils.PermissionUtils;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(icicle);
         setContentView(R.layout.activity_main);
         text = (EditText) findViewById(R.id.tArquivo);
+
+        NotificationUtil.createChannel(this);
 
         Intent intent = new Intent(this,Mp3Service.class);
         Log.d(TAG, "Iniciando o service");
@@ -123,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
             unbindService(conexao);
             // Cria a notificacao para o usuario voltar ao player.
             String mp3 = interfaceMp3.getMp3();
-            NotificationUtil.create(this, 1, new Intent(this, MainActivity.class),R.mipmap.ic_launcher, "MP3 Player", mp3);
+            NotificationUtil.create(this, new Intent(this, MainActivity.class),"MP3 Player", mp3, 1);
         } else {
             // (*7*)
             Log.d(TAG, "Activity destruida. Para o servico, pois nao existe musica tocando.");

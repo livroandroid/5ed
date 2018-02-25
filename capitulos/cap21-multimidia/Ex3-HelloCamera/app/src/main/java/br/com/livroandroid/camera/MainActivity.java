@@ -17,9 +17,8 @@ import android.widget.Toast;
 
 import java.io.File;
 
-import livroandroid.lib.utils.ImageResizeUtils;
-import livroandroid.lib.utils.SDCardUtils;
-
+import br.com.livroandroid.camera.utils.ImageResizeUtils;
+import br.com.livroandroid.camera.utils.SDCardUtils;
 
 public class MainActivity extends AppCompatActivity {
     // Caminho para salvar o arquivo

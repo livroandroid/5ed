@@ -17,22 +17,13 @@
 package br.com.livroandroid.helloalarme;
 
 import android.annotation.TargetApi;
-import android.app.job.JobInfo;
 import android.app.job.JobParameters;
-import android.app.job.JobScheduler;
 import android.app.job.JobService;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.os.Message;
-import android.os.Messenger;
-import android.os.RemoteException;
 import android.util.Log;
 
-import java.util.LinkedList;
-
-import livroandroid.lib.utils.NotificationUtil;
-
+import br.com.livroandroid.helloalarme.utils.NotificationUtil;
 
 /**
  * Service to handle callbacks from the JobScheduler. Requests scheduled with the JobScheduler
@@ -73,7 +64,7 @@ public class HelloJobService extends JobService {
         Intent notIntent = new Intent(this,MainActivity.class);
         String title = "Job";
         String contentTitle = "Hello Job: " + params.getJobId();
-        NotificationUtil.create(this, R.mipmap.ic_launcher, notIntent, R.mipmap.ic_launcher, title, contentTitle);
+        NotificationUtil.create(this, notIntent, title, contentTitle, 1);
 
         return true;
     }
