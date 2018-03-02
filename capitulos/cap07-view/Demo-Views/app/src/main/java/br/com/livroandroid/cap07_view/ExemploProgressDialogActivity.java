@@ -37,14 +37,9 @@ public class ExemploProgressDialogActivity extends Activity {
                     // Converte a InputStream do Java para Bitmap
                     final Bitmap imagem = BitmapFactory.decodeStream(in);
                     in.close();
+
                     // Atualiza a tela
-//                    atualizaImagem(imagem);
-
-//                    dialog.dismiss();
-                    ImageView imgView = (ImageView) findViewById(R.id.img);
-//                    imgView.setImageBitmap(imagem);
-
-                    imgView.setImageResource(R.drawable.android);
+                    atualizaImagem(imagem);
 
                 } catch (IOException e) {
                     // Uma aplica��o real deveria tratar este erro
