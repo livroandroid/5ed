@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import livroandroid.lib.utils.NotificationUtil;
-
 /**
  * Created by Ricardo Lecheta on 15/03/2015.
  */

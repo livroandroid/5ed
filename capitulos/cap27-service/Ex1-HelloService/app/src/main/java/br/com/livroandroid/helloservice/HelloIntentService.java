@@ -1,11 +1,8 @@
 package br.com.livroandroid.helloservice;
 
 import android.app.IntentService;
-import android.app.Notification;
 import android.content.Intent;
 import android.util.Log;
-
-import livroandroid.lib.utils.NotificationUtil;
 
 /**
  * Created by Ricardo Lecheta on 15/03/2015.

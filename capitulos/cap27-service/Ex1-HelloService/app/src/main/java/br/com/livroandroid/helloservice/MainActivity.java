@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import livroandroid.lib.utils.NotificationUtil;
-
 public class MainActivity extends AppCompatActivity {
 
     public static final Class<? extends Service> CLS = HelloIntentService.class;
