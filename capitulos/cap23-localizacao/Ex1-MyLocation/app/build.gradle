@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 28
+    
 
     defaultConfig {
         applicationId "br.com.livroandroid.location"
@@ -21,7 +21,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:appcompat-v7:28.0.0'
 
     compile 'com.google.android.gms:play-services-maps:11.8.0'
     compile 'com.google.android.gms:play-services-location:11.8.0'

@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 28
+    
 
     defaultConfig {
         applicationId "br.com.livroandroid.wearnotification"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -22,7 +22,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     wearApp project(':wear')
-    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:appcompat-v7:28.0.0'
     compile 'com.google.android.gms:play-services-wearable:11.8.0'
     compile 'br.com.livroandroid:android-utils:1.0.6'
 }

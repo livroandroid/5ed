@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 28
+    
 
     defaultConfig {
         applicationId "br.com.livroandroid.teste_intent_carros"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -21,6 +21,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:appcompat-v7:28.0.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
 }
